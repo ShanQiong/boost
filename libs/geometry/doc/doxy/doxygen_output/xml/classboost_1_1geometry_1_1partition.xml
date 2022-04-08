@@ -1,0 +1,500 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1partition" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::partition</compoundname>
+    <includes local="no">partition.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Box</type>
+      </param>
+      <param>
+        <type>typename IncludePolicy1</type>
+        <defval><ref refid="structboost_1_1geometry_1_1detail_1_1partition_1_1include__all__policy" kindref="compound">detail::partition::include_all_policy</ref></defval>
+      </param>
+      <param>
+        <type>typename IncludePolicy2</type>
+        <defval><ref refid="structboost_1_1geometry_1_1detail_1_1partition_1_1include__all__policy" kindref="compound">detail::partition::include_all_policy</ref></defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classboost_1_1geometry_1_1partition_1a20f58d338f7d0a006ca404f0c66fe257" prot="private" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t boost::geometry::partition&lt; Box, IncludePolicy1, IncludePolicy2 &gt;::default_min_elements</definition>
+        <argsstring></argsstring>
+        <name>default_min_elements</name>
+        <initializer>= 16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" line="618" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" bodystart="618" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1partition_1ab7eae193d1ea5d34f0e32e7bd688281d" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename IncludePolicy</type>
+          </param>
+          <param>
+            <type>typename ForwardRange</type>
+          </param>
+          <param>
+            <type>typename IteratorVector</type>
+          </param>
+          <param>
+            <type>typename ExpandPolicy</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void boost::geometry::partition&lt; Box, IncludePolicy1, IncludePolicy2 &gt;::expand_to_range</definition>
+        <argsstring>(ForwardRange const &amp;forward_range, Box &amp;total, IteratorVector &amp;iterator_vector, ExpandPolicy const &amp;expand_policy)</argsstring>
+        <name>expand_to_range</name>
+        <param>
+          <type>ForwardRange const &amp;</type>
+          <declname>forward_range</declname>
+        </param>
+        <param>
+          <type>Box &amp;</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>IteratorVector &amp;</type>
+          <declname>iterator_vector</declname>
+        </param>
+        <param>
+          <type>ExpandPolicy const &amp;</type>
+          <declname>expand_policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" line="627" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" bodystart="627" bodyend="643"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1partition_1a34736420789f71eee4764082eca423f0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ForwardRange</type>
+          </param>
+          <param>
+            <type>typename VisitPolicy</type>
+          </param>
+          <param>
+            <type>typename ExpandPolicy</type>
+          </param>
+          <param>
+            <type>typename OverlapsPolicy</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool boost::geometry::partition&lt; Box, IncludePolicy1, IncludePolicy2 &gt;::apply</definition>
+        <argsstring>(ForwardRange const &amp;forward_range, VisitPolicy &amp;visitor, ExpandPolicy const &amp;expand_policy, OverlapsPolicy const &amp;overlaps_policy)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>ForwardRange const &amp;</type>
+          <declname>forward_range</declname>
+        </param>
+        <param>
+          <type>VisitPolicy &amp;</type>
+          <declname>visitor</declname>
+        </param>
+        <param>
+          <type>ExpandPolicy const &amp;</type>
+          <declname>expand_policy</declname>
+        </param>
+        <param>
+          <type>OverlapsPolicy const &amp;</type>
+          <declname>overlaps_policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" line="653" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" bodystart="653" bodyend="660"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1partition_1a55ff6374f32a87e2b83487fb0356c94a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ForwardRange</type>
+          </param>
+          <param>
+            <type>typename VisitPolicy</type>
+          </param>
+          <param>
+            <type>typename ExpandPolicy</type>
+          </param>
+          <param>
+            <type>typename OverlapsPolicy</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool boost::geometry::partition&lt; Box, IncludePolicy1, IncludePolicy2 &gt;::apply</definition>
+        <argsstring>(ForwardRange const &amp;forward_range, VisitPolicy &amp;visitor, ExpandPolicy const &amp;expand_policy, OverlapsPolicy const &amp;overlaps_policy, std::size_t min_elements)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>ForwardRange const &amp;</type>
+          <declname>forward_range</declname>
+        </param>
+        <param>
+          <type>VisitPolicy &amp;</type>
+          <declname>visitor</declname>
+        </param>
+        <param>
+          <type>ExpandPolicy const &amp;</type>
+          <declname>expand_policy</declname>
+        </param>
+        <param>
+          <type>OverlapsPolicy const &amp;</type>
+          <declname>overlaps_policy</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>min_elements</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" line="669" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" bodystart="669" bodyend="677"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1partition_1a2917561342633a8b7796505a5066f015" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ForwardRange</type>
+          </param>
+          <param>
+            <type>typename VisitPolicy</type>
+          </param>
+          <param>
+            <type>typename ExpandPolicy</type>
+          </param>
+          <param>
+            <type>typename OverlapsPolicy</type>
+          </param>
+          <param>
+            <type>typename VisitBoxPolicy</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool boost::geometry::partition&lt; Box, IncludePolicy1, IncludePolicy2 &gt;::apply</definition>
+        <argsstring>(ForwardRange const &amp;forward_range, VisitPolicy &amp;visitor, ExpandPolicy const &amp;expand_policy, OverlapsPolicy const &amp;overlaps_policy, std::size_t min_elements, VisitBoxPolicy box_visitor)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>ForwardRange const &amp;</type>
+          <declname>forward_range</declname>
+        </param>
+        <param>
+          <type>VisitPolicy &amp;</type>
+          <declname>visitor</declname>
+        </param>
+        <param>
+          <type>ExpandPolicy const &amp;</type>
+          <declname>expand_policy</declname>
+        </param>
+        <param>
+          <type>OverlapsPolicy const &amp;</type>
+          <declname>overlaps_policy</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>min_elements</declname>
+        </param>
+        <param>
+          <type>VisitBoxPolicy</type>
+          <declname>box_visitor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" line="687" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" bodystart="687" bodyend="731"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1partition_1a0d3cb413cdca63622f86cdd6cf7f0732" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ForwardRange1</type>
+          </param>
+          <param>
+            <type>typename ForwardRange2</type>
+          </param>
+          <param>
+            <type>typename VisitPolicy</type>
+          </param>
+          <param>
+            <type>typename ExpandPolicy1</type>
+          </param>
+          <param>
+            <type>typename OverlapsPolicy1</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool boost::geometry::partition&lt; Box, IncludePolicy1, IncludePolicy2 &gt;::apply</definition>
+        <argsstring>(ForwardRange1 const &amp;forward_range1, ForwardRange2 const &amp;forward_range2, VisitPolicy &amp;visitor, ExpandPolicy1 const &amp;expand_policy1, OverlapsPolicy1 const &amp;overlaps_policy1)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>ForwardRange1 const &amp;</type>
+          <declname>forward_range1</declname>
+        </param>
+        <param>
+          <type>ForwardRange2 const &amp;</type>
+          <declname>forward_range2</declname>
+        </param>
+        <param>
+          <type>VisitPolicy &amp;</type>
+          <declname>visitor</declname>
+        </param>
+        <param>
+          <type>ExpandPolicy1 const &amp;</type>
+          <declname>expand_policy1</declname>
+        </param>
+        <param>
+          <type>OverlapsPolicy1 const &amp;</type>
+          <declname>overlaps_policy1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" line="741" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" bodystart="741" bodyend="750"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1partition_1ac5b597b2fe7ee7cacd3015f27377f1e9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ForwardRange1</type>
+          </param>
+          <param>
+            <type>typename ForwardRange2</type>
+          </param>
+          <param>
+            <type>typename VisitPolicy</type>
+          </param>
+          <param>
+            <type>typename ExpandPolicy1</type>
+          </param>
+          <param>
+            <type>typename OverlapsPolicy1</type>
+          </param>
+          <param>
+            <type>typename ExpandPolicy2</type>
+          </param>
+          <param>
+            <type>typename OverlapsPolicy2</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool boost::geometry::partition&lt; Box, IncludePolicy1, IncludePolicy2 &gt;::apply</definition>
+        <argsstring>(ForwardRange1 const &amp;forward_range1, ForwardRange2 const &amp;forward_range2, VisitPolicy &amp;visitor, ExpandPolicy1 const &amp;expand_policy1, OverlapsPolicy1 const &amp;overlaps_policy1, ExpandPolicy2 const &amp;expand_policy2, OverlapsPolicy2 const &amp;overlaps_policy2)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>ForwardRange1 const &amp;</type>
+          <declname>forward_range1</declname>
+        </param>
+        <param>
+          <type>ForwardRange2 const &amp;</type>
+          <declname>forward_range2</declname>
+        </param>
+        <param>
+          <type>VisitPolicy &amp;</type>
+          <declname>visitor</declname>
+        </param>
+        <param>
+          <type>ExpandPolicy1 const &amp;</type>
+          <declname>expand_policy1</declname>
+        </param>
+        <param>
+          <type>OverlapsPolicy1 const &amp;</type>
+          <declname>overlaps_policy1</declname>
+        </param>
+        <param>
+          <type>ExpandPolicy2 const &amp;</type>
+          <declname>expand_policy2</declname>
+        </param>
+        <param>
+          <type>OverlapsPolicy2 const &amp;</type>
+          <declname>overlaps_policy2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" line="762" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" bodystart="762" bodyend="773"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1partition_1a08594b6ce49cde81e35d081ca9f4b924" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ForwardRange1</type>
+          </param>
+          <param>
+            <type>typename ForwardRange2</type>
+          </param>
+          <param>
+            <type>typename VisitPolicy</type>
+          </param>
+          <param>
+            <type>typename ExpandPolicy1</type>
+          </param>
+          <param>
+            <type>typename OverlapsPolicy1</type>
+          </param>
+          <param>
+            <type>typename ExpandPolicy2</type>
+          </param>
+          <param>
+            <type>typename OverlapsPolicy2</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool boost::geometry::partition&lt; Box, IncludePolicy1, IncludePolicy2 &gt;::apply</definition>
+        <argsstring>(ForwardRange1 const &amp;forward_range1, ForwardRange2 const &amp;forward_range2, VisitPolicy &amp;visitor, ExpandPolicy1 const &amp;expand_policy1, OverlapsPolicy1 const &amp;overlaps_policy1, ExpandPolicy2 const &amp;expand_policy2, OverlapsPolicy2 const &amp;overlaps_policy2, std::size_t min_elements)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>ForwardRange1 const &amp;</type>
+          <declname>forward_range1</declname>
+        </param>
+        <param>
+          <type>ForwardRange2 const &amp;</type>
+          <declname>forward_range2</declname>
+        </param>
+        <param>
+          <type>VisitPolicy &amp;</type>
+          <declname>visitor</declname>
+        </param>
+        <param>
+          <type>ExpandPolicy1 const &amp;</type>
+          <declname>expand_policy1</declname>
+        </param>
+        <param>
+          <type>OverlapsPolicy1 const &amp;</type>
+          <declname>overlaps_policy1</declname>
+        </param>
+        <param>
+          <type>ExpandPolicy2 const &amp;</type>
+          <declname>expand_policy2</declname>
+        </param>
+        <param>
+          <type>OverlapsPolicy2 const &amp;</type>
+          <declname>overlaps_policy2</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>min_elements</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" line="785" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" bodystart="785" bodyend="797"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1partition_1ab87e3ce60216f45e14400a430b2eae1b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ForwardRange1</type>
+          </param>
+          <param>
+            <type>typename ForwardRange2</type>
+          </param>
+          <param>
+            <type>typename VisitPolicy</type>
+          </param>
+          <param>
+            <type>typename ExpandPolicy1</type>
+          </param>
+          <param>
+            <type>typename OverlapsPolicy1</type>
+          </param>
+          <param>
+            <type>typename ExpandPolicy2</type>
+          </param>
+          <param>
+            <type>typename OverlapsPolicy2</type>
+          </param>
+          <param>
+            <type>typename VisitBoxPolicy</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool boost::geometry::partition&lt; Box, IncludePolicy1, IncludePolicy2 &gt;::apply</definition>
+        <argsstring>(ForwardRange1 const &amp;forward_range1, ForwardRange2 const &amp;forward_range2, VisitPolicy &amp;visitor, ExpandPolicy1 const &amp;expand_policy1, OverlapsPolicy1 const &amp;overlaps_policy1, ExpandPolicy2 const &amp;expand_policy2, OverlapsPolicy2 const &amp;overlaps_policy2, std::size_t min_elements, VisitBoxPolicy box_visitor)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>ForwardRange1 const &amp;</type>
+          <declname>forward_range1</declname>
+        </param>
+        <param>
+          <type>ForwardRange2 const &amp;</type>
+          <declname>forward_range2</declname>
+        </param>
+        <param>
+          <type>VisitPolicy &amp;</type>
+          <declname>visitor</declname>
+        </param>
+        <param>
+          <type>ExpandPolicy1 const &amp;</type>
+          <declname>expand_policy1</declname>
+        </param>
+        <param>
+          <type>OverlapsPolicy1 const &amp;</type>
+          <declname>overlaps_policy1</declname>
+        </param>
+        <param>
+          <type>ExpandPolicy2 const &amp;</type>
+          <declname>expand_policy2</declname>
+        </param>
+        <param>
+          <type>OverlapsPolicy2 const &amp;</type>
+          <declname>overlaps_policy2</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>min_elements</declname>
+        </param>
+        <param>
+          <type>VisitBoxPolicy</type>
+          <declname>box_visitor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" line="810" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" bodystart="810" bodyend="869"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" line="617" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/detail/partition.hpp" bodystart="616" bodyend="870"/>
+    <listofallmembers>
+      <member refid="classboost_1_1geometry_1_1partition_1a34736420789f71eee4764082eca423f0" prot="public" virt="non-virtual"><scope>boost::geometry::partition</scope><name>apply</name></member>
+      <member refid="classboost_1_1geometry_1_1partition_1a55ff6374f32a87e2b83487fb0356c94a" prot="public" virt="non-virtual"><scope>boost::geometry::partition</scope><name>apply</name></member>
+      <member refid="classboost_1_1geometry_1_1partition_1a2917561342633a8b7796505a5066f015" prot="public" virt="non-virtual"><scope>boost::geometry::partition</scope><name>apply</name></member>
+      <member refid="classboost_1_1geometry_1_1partition_1a0d3cb413cdca63622f86cdd6cf7f0732" prot="public" virt="non-virtual"><scope>boost::geometry::partition</scope><name>apply</name></member>
+      <member refid="classboost_1_1geometry_1_1partition_1ac5b597b2fe7ee7cacd3015f27377f1e9" prot="public" virt="non-virtual"><scope>boost::geometry::partition</scope><name>apply</name></member>
+      <member refid="classboost_1_1geometry_1_1partition_1a08594b6ce49cde81e35d081ca9f4b924" prot="public" virt="non-virtual"><scope>boost::geometry::partition</scope><name>apply</name></member>
+      <member refid="classboost_1_1geometry_1_1partition_1ab87e3ce60216f45e14400a430b2eae1b" prot="public" virt="non-virtual"><scope>boost::geometry::partition</scope><name>apply</name></member>
+      <member refid="classboost_1_1geometry_1_1partition_1a20f58d338f7d0a006ca404f0c66fe257" prot="private" virt="non-virtual"><scope>boost::geometry::partition</scope><name>default_min_elements</name></member>
+      <member refid="classboost_1_1geometry_1_1partition_1ab7eae193d1ea5d34f0e32e7bd688281d" prot="private" virt="non-virtual"><scope>boost::geometry::partition</scope><name>expand_to_range</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

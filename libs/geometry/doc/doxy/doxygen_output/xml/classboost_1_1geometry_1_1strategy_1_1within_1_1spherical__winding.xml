@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1strategy_1_1within_1_1spherical__winding" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::strategy::within::spherical_winding</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">within::detail::spherical_winding_base&lt; side::spherical_side_formula&lt; CalculationType &gt;, CalculationType &gt;</basecompoundref>
+    <includes local="no">point_in_poly_winding.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Point</type>
+        <defval>void</defval>
+      </param>
+      <param>
+        <type>typename PointOfSegment</type>
+        <defval>Point</defval>
+      </param>
+      <param>
+        <type>typename CalculationType</type>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+<para>Within detection using winding rule in spherical coordinate system. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any type fulfilling a Point Concept </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PointOfSegment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>segment point type </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CalculationType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numeric type for calculation (e.g. high precision); if [*void] then it is extracted automatically from the coordinate type and (if necessary) promoted to floating point</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk>
+[heading See also]
+[link geometry.reference.algorithms.within.within_3_with_strategy within (with strategy)]
+</qbk>  </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2738">
+        <label>boost::geometry::strategy::within::spherical_winding&lt; Point, PointOfSegment, CalculationType &gt;</label>
+        <link refid="classboost_1_1geometry_1_1strategy_1_1within_1_1spherical__winding"/>
+        <childnode refid="2739" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2739">
+        <label>within::detail::spherical_winding_base&lt; side::spherical_side_formula&lt; CalculationType &gt;, CalculationType &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2740">
+        <label>boost::geometry::strategy::within::spherical_winding&lt; Point, PointOfSegment, CalculationType &gt;</label>
+        <link refid="classboost_1_1geometry_1_1strategy_1_1within_1_1spherical__winding"/>
+        <childnode refid="2741" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2741">
+        <label>within::detail::spherical_winding_base&lt; side::spherical_side_formula&lt; CalculationType &gt;, CalculationType &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/point_in_poly_winding.hpp" line="511" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/point_in_poly_winding.hpp" bodystart="505" bodyend="511"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

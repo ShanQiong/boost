@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1strategy_1_1area_1_1spherical__box" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::strategy::area::spherical_box</compoundname>
+    <includes local="no">area_box.hpp</includes>
+    <innerclass refid="structboost_1_1geometry_1_1strategy_1_1area_1_1spherical__box_1_1result__type" prot="public">boost::geometry::strategy::area::spherical_box::result_type</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename RadiusTypeOrSphere</type>
+        <defval>double</defval>
+      </param>
+      <param>
+        <type>typename CalculationType</type>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classboost_1_1geometry_1_1strategy_1_1area_1_1spherical__box_1adf2aed4461a2b9c97242aec6328d15b2" prot="private" static="no">
+        <type>strategy_detail::get_radius&lt; RadiusTypeOrSphere &gt;::type</type>
+        <definition>typedef strategy_detail::get_radius&lt; RadiusTypeOrSphere &gt;::type boost::geometry::strategy::area::spherical_box&lt; RadiusTypeOrSphere, CalculationType &gt;::radius_type</definition>
+        <argsstring></argsstring>
+        <name>radius_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/area_box.hpp" line="52" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/area_box.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classboost_1_1geometry_1_1strategy_1_1area_1_1spherical__box_1accd62ad881aade92aac7f32028311323" prot="private" static="no" mutable="no">
+        <type>radius_type</type>
+        <definition>radius_type boost::geometry::strategy::area::spherical_box&lt; RadiusTypeOrSphere, CalculationType &gt;::m_radius</definition>
+        <argsstring></argsstring>
+        <name>m_radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/area_box.hpp" line="105" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/area_box.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1area_1_1spherical__box_1ac374a7ae820f03d687c619051d599afb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Box</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto boost::geometry::strategy::area::spherical_box&lt; RadiusTypeOrSphere, CalculationType &gt;::apply</definition>
+        <argsstring>(Box const &amp;box) const</argsstring>
+        <name>apply</name>
+        <param>
+          <type>Box const &amp;</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/area_box.hpp" line="78" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/area_box.hpp" bodystart="78" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1area_1_1spherical__box_1aae40485895f8b6308bf1a01d95dbb7f4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classboost_1_1geometry_1_1srs_1_1sphere" kindref="compound">srs::sphere</ref>&lt; radius_type &gt;</type>
+        <definition>srs::sphere&lt;radius_type&gt; boost::geometry::strategy::area::spherical_box&lt; RadiusTypeOrSphere, CalculationType &gt;::model</definition>
+        <argsstring>() const</argsstring>
+        <name>model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/area_box.hpp" line="99" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/area_box.hpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1area_1_1spherical__box_1a57fff047903cc8cae3fca8434561d35a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::strategy::area::spherical_box&lt; RadiusTypeOrSphere, CalculationType &gt;::spherical_box</definition>
+        <argsstring>()</argsstring>
+        <name>spherical_box</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/area_box.hpp" line="65" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/area_box.hpp" bodystart="65" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1area_1_1spherical__box_1a959841a5de498472d72652c785f584ff" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RadiusOrSphere</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>boost::geometry::strategy::area::spherical_box&lt; RadiusTypeOrSphere, CalculationType &gt;::spherical_box</definition>
+        <argsstring>(RadiusOrSphere const &amp;radius_or_sphere)</argsstring>
+        <name>spherical_box</name>
+        <param>
+          <type>RadiusOrSphere const &amp;</type>
+          <declname>radius_or_sphere</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/area_box.hpp" line="70" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/area_box.hpp" bodystart="70" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/area_box.hpp" line="48" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/area_box.hpp" bodystart="47" bodyend="106"/>
+    <listofallmembers>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1area_1_1spherical__box_1ac374a7ae820f03d687c619051d599afb" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::area::spherical_box</scope><name>apply</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1area_1_1spherical__box_1accd62ad881aade92aac7f32028311323" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::area::spherical_box</scope><name>m_radius</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1area_1_1spherical__box_1aae40485895f8b6308bf1a01d95dbb7f4" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::area::spherical_box</scope><name>model</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1area_1_1spherical__box_1adf2aed4461a2b9c97242aec6328d15b2" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::area::spherical_box</scope><name>radius_type</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1area_1_1spherical__box_1a57fff047903cc8cae3fca8434561d35a" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::area::spherical_box</scope><name>spherical_box</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1area_1_1spherical__box_1a959841a5de498472d72652c785f584ff" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::area::spherical_box</scope><name>spherical_box</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

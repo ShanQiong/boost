@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>boost::geometry::select_most_precise&lt; T1, T2 &gt;</compoundname>
+    <includes local="no">select_most_precise.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T1</type>
+      </param>
+      <param>
+        <type>typename T2</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4_1a169437ef098fb0fdae95d3e325cdc556" prot="public" static="no">
+        <type>std::conditional_t&lt;(<ref refid="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4_1acefafb548bfa672e61566a6e78a9eb35" kindref="member">priority1</ref> &gt; <ref refid="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4_1a094d38734dfdf24ebf9685485c874b4f" kindref="member">priority2</ref>), T1, std::conditional_t&lt;(<ref refid="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4_1a094d38734dfdf24ebf9685485c874b4f" kindref="member">priority2</ref> &gt; <ref refid="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4_1acefafb548bfa672e61566a6e78a9eb35" kindref="member">priority1</ref>), T2, std::conditional_t&lt;(<ref refid="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4_1acefafb548bfa672e61566a6e78a9eb35" kindref="member">priority1</ref>==0||<ref refid="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4_1acefafb548bfa672e61566a6e78a9eb35" kindref="member">priority1</ref>==3), T1, std::conditional_t&lt;(<ref refid="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4_1a2a87834d2c9c0ab559ca94c0ff08adc0" kindref="member">size2</ref> &gt; <ref refid="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4_1af656e945f13b00bf559be8eecf7418be" kindref="member">size1</ref>), T2, T1 &gt; &gt; &gt; &gt;</type>
+        <definition>typedef std::conditional_t&lt; (priority1 &gt; priority2), T1, std::conditional_t &lt; (priority2 &gt; priority1), T2, std::conditional_t &lt; (priority1 == 0 || priority1 == 3), T1, std::conditional_t &lt; (size2 &gt; size1), T2, T1 &gt; &gt; &gt; &gt; boost::geometry::select_most_precise&lt; T1, T2 &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_most_precise.hpp" line="132" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_most_precise.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4_1acefafb548bfa672e61566a6e78a9eb35" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int boost::geometry::select_most_precise&lt; T1, T2 &gt;::priority1</definition>
+        <argsstring></argsstring>
+        <name>priority1</name>
+        <initializer>= detail::select_most_precise::type_priority&lt;T1&gt;::value</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_most_precise.hpp" line="107" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_most_precise.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4_1a094d38734dfdf24ebf9685485c874b4f" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int boost::geometry::select_most_precise&lt; T1, T2 &gt;::priority2</definition>
+        <argsstring></argsstring>
+        <name>priority2</name>
+        <initializer>= detail::select_most_precise::type_priority&lt;T2&gt;::value</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_most_precise.hpp" line="108" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_most_precise.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4_1af656e945f13b00bf559be8eecf7418be" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t boost::geometry::select_most_precise&lt; T1, T2 &gt;::size1</definition>
+        <argsstring></argsstring>
+        <name>size1</name>
+        <initializer>= detail::select_most_precise::type_size&lt;T1&gt;::value</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_most_precise.hpp" line="109" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_most_precise.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4_1a2a87834d2c9c0ab559ca94c0ff08adc0" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t boost::geometry::select_most_precise&lt; T1, T2 &gt;::size2</definition>
+        <argsstring></argsstring>
+        <name>size2</name>
+        <initializer>= detail::select_most_precise::type_size&lt;T2&gt;::value</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_most_precise.hpp" line="110" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_most_precise.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_most_precise.hpp" line="106" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_most_precise.hpp" bodystart="105" bodyend="133"/>
+    <listofallmembers>
+      <member refid="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4_1acefafb548bfa672e61566a6e78a9eb35" prot="public" virt="non-virtual"><scope>boost::geometry::select_most_precise&lt; T1, T2 &gt;</scope><name>priority1</name></member>
+      <member refid="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4_1a094d38734dfdf24ebf9685485c874b4f" prot="public" virt="non-virtual"><scope>boost::geometry::select_most_precise&lt; T1, T2 &gt;</scope><name>priority2</name></member>
+      <member refid="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4_1af656e945f13b00bf559be8eecf7418be" prot="public" virt="non-virtual"><scope>boost::geometry::select_most_precise&lt; T1, T2 &gt;</scope><name>size1</name></member>
+      <member refid="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4_1a2a87834d2c9c0ab559ca94c0ff08adc0" prot="public" virt="non-virtual"><scope>boost::geometry::select_most_precise&lt; T1, T2 &gt;</scope><name>size2</name></member>
+      <member refid="structboost_1_1geometry_1_1select__most__precise_3_01_t1_00_01_t2_01_4_1a169437ef098fb0fdae95d3e325cdc556" prot="public" virt="non-virtual"><scope>boost::geometry::select_most_precise&lt; T1, T2 &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

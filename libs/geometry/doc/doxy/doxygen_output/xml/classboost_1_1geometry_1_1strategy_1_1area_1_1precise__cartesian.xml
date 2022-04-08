@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1strategy_1_1area_1_1precise__cartesian" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::strategy::area::precise_cartesian</compoundname>
+    <includes local="no">precise_area.hpp</includes>
+    <innerclass refid="structboost_1_1geometry_1_1strategy_1_1area_1_1precise__cartesian_1_1result__type" prot="public">boost::geometry::strategy::area::precise_cartesian::result_type</innerclass>
+    <innerclass refid="classboost_1_1geometry_1_1strategy_1_1area_1_1precise__cartesian_1_1state" prot="public">boost::geometry::strategy::area::precise_cartesian::state</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename CalculationType</type>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1area_1_1precise__cartesian_1a820511c034b67c61038aa88c83c4d4af" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename PointOfSegment</type>
+          </param>
+          <param>
+            <type>typename Geometry</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void boost::geometry::strategy::area::precise_cartesian&lt; CalculationType &gt;::apply</definition>
+        <argsstring>(PointOfSegment const &amp;p1, PointOfSegment const &amp;p2, state&lt; Geometry &gt; &amp;st)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>PointOfSegment const &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>PointOfSegment const &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type><ref refid="classboost_1_1geometry_1_1strategy_1_1area_1_1precise__cartesian_1_1state" kindref="compound">state</ref>&lt; Geometry &gt; &amp;</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/cartesian/precise_area.hpp" line="86" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/cartesian/precise_area.hpp" bodystart="86" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1area_1_1precise__cartesian_1ab54bca37dd75cc7bab85007a2e8323f1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Geometry</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>static auto boost::geometry::strategy::area::precise_cartesian&lt; CalculationType &gt;::result</definition>
+        <argsstring>(state&lt; Geometry &gt; &amp;st)</argsstring>
+        <name>result</name>
+        <param>
+          <type><ref refid="classboost_1_1geometry_1_1strategy_1_1area_1_1precise__cartesian_1_1state" kindref="compound">state</ref>&lt; Geometry &gt; &amp;</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/cartesian/precise_area.hpp" line="102" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/cartesian/precise_area.hpp" bodystart="102" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Cartesian area calculation. </para>    </briefdescription>
+    <detaileddescription>
+<para>Calculates cartesian area using the trapezoidal rule and precise summation (useful to increase precision with floating point arithmetic) <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>CalculationType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numeric type for calculation (e.g. high precision); if [*void] then it is extracted automatically from the coordinate type and (if necessary) promoted to floating point</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk>
+[heading See also]
+[link geometry.reference.algorithms.area.area_2_with_strategy area (with strategy)]
+</qbk>  </para>    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/cartesian/precise_area.hpp" line="47" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/cartesian/precise_area.hpp" bodystart="46" bodyend="107"/>
+    <listofallmembers>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1area_1_1precise__cartesian_1a820511c034b67c61038aa88c83c4d4af" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::area::precise_cartesian</scope><name>apply</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1area_1_1precise__cartesian_1ab54bca37dd75cc7bab85007a2e8323f1" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::area::precise_cartesian</scope><name>result</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

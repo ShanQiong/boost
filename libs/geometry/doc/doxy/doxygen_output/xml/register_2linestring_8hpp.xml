@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="register_2linestring_8hpp" kind="file" language="C++">
+    <compoundname>linestring.hpp</compoundname>
+    <includes refid="tag_8hpp" local="no">boost/geometry/core/tag.hpp</includes>
+    <includes refid="core_2tags_8hpp" local="no">boost/geometry/core/tags.hpp</includes>
+    <incdepgraph>
+      <node id="84460">
+        <label>boost/geometry/core/tag.hpp</label>
+        <link refid="tag_8hpp"/>
+        <childnode refid="84461" relation="include">
+        </childnode>
+        <childnode refid="84462" relation="include">
+        </childnode>
+      </node>
+      <node id="84459">
+        <label>/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/register/linestring.hpp</label>
+        <link refid="register_2linestring_8hpp"/>
+        <childnode refid="84460" relation="include">
+        </childnode>
+        <childnode refid="84461" relation="include">
+        </childnode>
+      </node>
+      <node id="84463">
+        <label>cstddef</label>
+      </node>
+      <node id="84461">
+        <label>boost/geometry/core/tags.hpp</label>
+        <link refid="core_2tags_8hpp"/>
+      </node>
+      <node id="84462">
+        <label>boost/geometry/util/type_traits_std.hpp</label>
+        <link refid="type__traits__std_8hpp"/>
+        <childnode refid="84463" relation="include">
+        </childnode>
+        <childnode refid="84464" relation="include">
+        </childnode>
+      </node>
+      <node id="84464">
+        <label>type_traits</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__register_1ga1d26e8196d719505669ecdb89e11bd2b" prot="public" static="no">
+        <name>BOOST_GEOMETRY_REGISTER_LINESTRING</name>
+        <param><defname>Linestring</defname></param>
+        <initializer>namespace boost { namespace geometry { namespace traits {  \
+    template&lt;&gt; struct tag&lt;Linestring&gt; { typedef linestring_tag type; }; \
+}}}</initializer>
+        <briefdescription>
+<para>Macro to register a linestring. </para>        </briefdescription>
+        <detaileddescription>
+<para>The macro BOOST_GEOMETRY_REGISTER_LINESTRING registers a linestring such that it is recognized by Boost.Geometry and that Boost.Geometry functionality can used with the specified type. The linestring may contain template parameters, which must be specified then. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Linestring</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linestring type to be registered</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk>
+[heading Example]
+[register_linestring]
+[register_linestring_output]
+</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/register/linestring.hpp" line="35" column="9" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/register/linestring.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__register_1ga56729e5117bdd1ef2f5df70e113135d1" prot="public" static="no">
+        <name>BOOST_GEOMETRY_REGISTER_LINESTRING_TEMPLATED</name>
+        <param><defname>Linestring</defname></param>
+        <initializer>namespace boost { namespace geometry { namespace traits {  \
+    template&lt;typename P&gt; struct tag&lt; Linestring&lt;P&gt; &gt; { typedef linestring_tag type; }; \
+}}}</initializer>
+        <briefdescription>
+<para>Macro to register a templated linestring. </para>        </briefdescription>
+        <detaileddescription>
+<para>The macro BOOST_GEOMETRY_REGISTER_LINESTRING_TEMPLATED registers a templated linestring such that it is recognized by Boost.Geometry and that Boost.Geometry functionality can used with the specified type. The type must have one template parameter, which should be a point type, and should not be specified. Boost.Geometry takes care of inserting the template parameter. Hence all types of this templated linestring are registered, regardless of their point type. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Linestring</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linestring (without template parameters) type to be registered</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk>
+[heading Example]
+[register_linestring_templated]
+[register_linestring_templated_output]
+</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/register/linestring.hpp" line="54" column="9" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/register/linestring.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/register/linestring.hpp"/>
+  </compounddef>
+</doxygen>

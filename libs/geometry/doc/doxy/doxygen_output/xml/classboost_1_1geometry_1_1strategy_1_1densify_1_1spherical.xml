@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1strategy_1_1densify_1_1spherical" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::strategy::densify::spherical</compoundname>
+    <includes local="no">densify.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename RadiusTypeOrSphere</type>
+        <defval>double</defval>
+      </param>
+      <param>
+        <type>typename CalculationType</type>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classboost_1_1geometry_1_1strategy_1_1densify_1_1spherical_1aaf2b7c49d978c9a4352a60b91c77f322" prot="public" static="no">
+        <type>strategy_detail::get_radius&lt; RadiusTypeOrSphere &gt;::type</type>
+        <definition>typedef strategy_detail::get_radius&lt; RadiusTypeOrSphere &gt;::type boost::geometry::strategy::densify::spherical&lt; RadiusTypeOrSphere, CalculationType &gt;::radius_type</definition>
+        <argsstring></argsstring>
+        <name>radius_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/densify.hpp" line="64" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/densify.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classboost_1_1geometry_1_1strategy_1_1densify_1_1spherical_1aa759a9d0330641cb7729b4636062cc15" prot="private" static="no" mutable="no">
+        <type><ref refid="classboost_1_1geometry_1_1strategy_1_1densify_1_1spherical_1aaf2b7c49d978c9a4352a60b91c77f322" kindref="member">radius_type</ref></type>
+        <definition>radius_type boost::geometry::strategy::densify::spherical&lt; RadiusTypeOrSphere, CalculationType &gt;::m_radius</definition>
+        <argsstring></argsstring>
+        <name>m_radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/densify.hpp" line="127" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/densify.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1densify_1_1spherical_1a9ca91fdb68a941cf455fb272b433faad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Point</type>
+          </param>
+          <param>
+            <type>typename AssignPolicy</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::geometry::strategy::densify::spherical&lt; RadiusTypeOrSphere, CalculationType &gt;::apply</definition>
+        <argsstring>(Point const &amp;p0, Point const &amp;p1, AssignPolicy &amp;policy, T const &amp;length_threshold) const</argsstring>
+        <name>apply</name>
+        <param>
+          <type>Point const &amp;</type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type>Point const &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>AssignPolicy &amp;</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>T const &amp;</type>
+          <declname>length_threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/densify.hpp" line="80" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/densify.hpp" bodystart="80" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1densify_1_1spherical_1af4a033e3819305c33afa625e2d00f595" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classboost_1_1geometry_1_1strategy_1_1densify_1_1spherical_1aaf2b7c49d978c9a4352a60b91c77f322" kindref="member">radius_type</ref></type>
+        <definition>radius_type boost::geometry::strategy::densify::spherical&lt; RadiusTypeOrSphere, CalculationType &gt;::radius</definition>
+        <argsstring>() const</argsstring>
+        <name>radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/densify.hpp" line="121" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/densify.hpp" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1densify_1_1spherical_1a0388734e59fc720b5e51cc0c408d1853" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::strategy::densify::spherical&lt; RadiusTypeOrSphere, CalculationType &gt;::spherical</definition>
+        <argsstring>()</argsstring>
+        <name>spherical</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/densify.hpp" line="67" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/densify.hpp" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1densify_1_1spherical_1a690afa4f4fcdb733e0fedf1cb3540741" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RadiusOrSphere</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>boost::geometry::strategy::densify::spherical&lt; RadiusTypeOrSphere, CalculationType &gt;::spherical</definition>
+        <argsstring>(RadiusOrSphere const &amp;radius_or_sphere)</argsstring>
+        <name>spherical</name>
+        <param>
+          <type>RadiusOrSphere const &amp;</type>
+          <declname>radius_or_sphere</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/densify.hpp" line="72" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/densify.hpp" bodystart="72" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Densification of spherical segment. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>RadiusTypeOrSphere</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numeric type for radius (of sphere, earth) or sphere model </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CalculationType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numeric type for calculation (e.g. high precision); if [*void] then it is extracted automatically from the coordinate type and (if necessary) promoted to floating point</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk>
+[heading See also]
+[link geometry.reference.algorithms.densify.densify_4_with_strategy densify (with strategy)]
+</qbk>  </para>    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/densify.hpp" line="59" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/densify.hpp" bodystart="58" bodyend="128"/>
+    <listofallmembers>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1densify_1_1spherical_1a9ca91fdb68a941cf455fb272b433faad" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::densify::spherical</scope><name>apply</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1densify_1_1spherical_1aa759a9d0330641cb7729b4636062cc15" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::densify::spherical</scope><name>m_radius</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1densify_1_1spherical_1af4a033e3819305c33afa625e2d00f595" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::densify::spherical</scope><name>radius</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1densify_1_1spherical_1aaf2b7c49d978c9a4352a60b91c77f322" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::densify::spherical</scope><name>radius_type</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1densify_1_1spherical_1a0388734e59fc720b5e51cc0c408d1853" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::densify::spherical</scope><name>spherical</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1densify_1_1spherical_1a690afa4f4fcdb733e0fedf1cb3540741" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::densify::spherical</scope><name>spherical</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

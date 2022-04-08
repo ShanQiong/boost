@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::strategy::azimuth::geographic</compoundname>
+    <includes local="no">azimuth.hpp</includes>
+    <innerclass refid="structboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1_1result__type" prot="public">boost::geometry::strategy::azimuth::geographic::result_type</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename FormulaPolicy</type>
+        <defval><ref refid="structboost_1_1geometry_1_1strategy_1_1andoyer" kindref="compound">strategy::andoyer</ref></defval>
+      </param>
+      <param>
+        <type>typename Spheroid</type>
+        <defval><ref refid="classboost_1_1geometry_1_1srs_1_1spheroid" kindref="compound">srs::spheroid</ref>&lt;double&gt;</defval>
+      </param>
+      <param>
+        <type>typename CalculationType</type>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1a292af811e90d3d80e60c4db22edd6b27" prot="public" static="no">
+        <type>Spheroid</type>
+        <definition>typedef Spheroid boost::geometry::strategy::azimuth::geographic&lt; FormulaPolicy, Spheroid, CalculationType &gt;::model_type</definition>
+        <argsstring></argsstring>
+        <name>model_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" line="48" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1ac6fdb47365f762f7af331d3c670ebf28" prot="private" static="no" mutable="no">
+        <type>Spheroid</type>
+        <definition>Spheroid boost::geometry::strategy::azimuth::geographic&lt; FormulaPolicy, Spheroid, CalculationType &gt;::m_spheroid</definition>
+        <argsstring></argsstring>
+        <name>m_spheroid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" line="128" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1ab41bb03363bb9a4fd63503a4c8b8207e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+          <param>
+            <type>typename Result</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::geometry::strategy::azimuth::geographic&lt; FormulaPolicy, Spheroid, CalculationType &gt;::apply</definition>
+        <argsstring>(T1 const &amp;lon1_rad, T1 const &amp;lat1_rad, T2 const &amp;lon2_rad, T2 const &amp;lat2_rad, Result &amp;a1, Result &amp;a2) const</argsstring>
+        <name>apply</name>
+        <param>
+          <type>T1 const &amp;</type>
+          <declname>lon1_rad</declname>
+        </param>
+        <param>
+          <type>T1 const &amp;</type>
+          <declname>lat1_rad</declname>
+        </param>
+        <param>
+          <type>T2 const &amp;</type>
+          <declname>lon2_rad</declname>
+        </param>
+        <param>
+          <type>T2 const &amp;</type>
+          <declname>lat2_rad</declname>
+        </param>
+        <param>
+          <type>Result &amp;</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>Result &amp;</type>
+          <declname>a2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" line="64" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" bodystart="64" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1af9823187825f8e99e410d26382361212" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+          <param>
+            <type>typename Result</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::geometry::strategy::azimuth::geographic&lt; FormulaPolicy, Spheroid, CalculationType &gt;::apply</definition>
+        <argsstring>(T1 const &amp;lon1_rad, T1 const &amp;lat1_rad, T2 const &amp;lon2_rad, T2 const &amp;lat2_rad, Result &amp;a1) const</argsstring>
+        <name>apply</name>
+        <param>
+          <type>T1 const &amp;</type>
+          <declname>lon1_rad</declname>
+        </param>
+        <param>
+          <type>T1 const &amp;</type>
+          <declname>lat1_rad</declname>
+        </param>
+        <param>
+          <type>T2 const &amp;</type>
+          <declname>lon2_rad</declname>
+        </param>
+        <param>
+          <type>T2 const &amp;</type>
+          <declname>lat2_rad</declname>
+        </param>
+        <param>
+          <type>Result &amp;</type>
+          <declname>a1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" line="73" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" bodystart="73" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1a58737ff41612f27b44bda483d03a9f21" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+          <param>
+            <type>typename Result</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::geometry::strategy::azimuth::geographic&lt; FormulaPolicy, Spheroid, CalculationType &gt;::apply_reverse</definition>
+        <argsstring>(T1 const &amp;lon1_rad, T1 const &amp;lat1_rad, T2 const &amp;lon2_rad, T2 const &amp;lat2_rad, Result &amp;a2) const</argsstring>
+        <name>apply_reverse</name>
+        <param>
+          <type>T1 const &amp;</type>
+          <declname>lon1_rad</declname>
+        </param>
+        <param>
+          <type>T1 const &amp;</type>
+          <declname>lat1_rad</declname>
+        </param>
+        <param>
+          <type>T2 const &amp;</type>
+          <declname>lon2_rad</declname>
+        </param>
+        <param>
+          <type>T2 const &amp;</type>
+          <declname>lat2_rad</declname>
+        </param>
+        <param>
+          <type>Result &amp;</type>
+          <declname>a2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" line="82" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" bodystart="82" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1a694091140d4717425ac888d02abe1af7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::strategy::azimuth::geographic&lt; FormulaPolicy, Spheroid, CalculationType &gt;::geographic</definition>
+        <argsstring>()</argsstring>
+        <name>geographic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" line="50" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1a861ba242c04febb94047914114000d34" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::strategy::azimuth::geographic&lt; FormulaPolicy, Spheroid, CalculationType &gt;::geographic</definition>
+        <argsstring>(Spheroid const &amp;spheroid)</argsstring>
+        <name>geographic</name>
+        <param>
+          <type>Spheroid const &amp;</type>
+          <declname>spheroid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" line="54" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1a03a8257c7c8f8da2882489889eb4d427" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1a292af811e90d3d80e60c4db22edd6b27" kindref="member">model_type</ref> const  &amp;</type>
+        <definition>model_type const&amp; boost::geometry::strategy::azimuth::geographic&lt; FormulaPolicy, Spheroid, CalculationType &gt;::model</definition>
+        <argsstring>() const</argsstring>
+        <name>model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" line="58" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1a2f1f6b53ffbec214451e855963cce702" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>EnableAzimuth</declname>
+            <defname>EnableAzimuth</defname>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>EnableReverseAzimuth</declname>
+            <defname>EnableReverseAzimuth</defname>
+          </param>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+          <param>
+            <type>typename Result</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::geometry::strategy::azimuth::geographic&lt; FormulaPolicy, Spheroid, CalculationType &gt;::compute</definition>
+        <argsstring>(T1 const &amp;lon1_rad, T1 const &amp;lat1_rad, T2 const &amp;lon2_rad, T2 const &amp;lat2_rad, Result &amp;a1, Result &amp;a2) const</argsstring>
+        <name>compute</name>
+        <param>
+          <type>T1 const &amp;</type>
+          <declname>lon1_rad</declname>
+        </param>
+        <param>
+          <type>T1 const &amp;</type>
+          <declname>lat1_rad</declname>
+        </param>
+        <param>
+          <type>T2 const &amp;</type>
+          <declname>lon2_rad</declname>
+        </param>
+        <param>
+          <type>T2 const &amp;</type>
+          <declname>lat2_rad</declname>
+        </param>
+        <param>
+          <type>Result &amp;</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>Result &amp;</type>
+          <declname>a2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" line="99" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" bodystart="99" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" line="38" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/azimuth.hpp" bodystart="37" bodyend="129"/>
+    <listofallmembers>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1ab41bb03363bb9a4fd63503a4c8b8207e" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::azimuth::geographic</scope><name>apply</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1af9823187825f8e99e410d26382361212" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::azimuth::geographic</scope><name>apply</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1a58737ff41612f27b44bda483d03a9f21" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::azimuth::geographic</scope><name>apply_reverse</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1a2f1f6b53ffbec214451e855963cce702" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::azimuth::geographic</scope><name>compute</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1a694091140d4717425ac888d02abe1af7" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::azimuth::geographic</scope><name>geographic</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1a861ba242c04febb94047914114000d34" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::azimuth::geographic</scope><name>geographic</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1ac6fdb47365f762f7af331d3c670ebf28" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::azimuth::geographic</scope><name>m_spheroid</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1a03a8257c7c8f8da2882489889eb4d427" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::azimuth::geographic</scope><name>model</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1azimuth_1_1geographic_1a292af811e90d3d80e60c4db22edd6b27" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::azimuth::geographic</scope><name>model_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

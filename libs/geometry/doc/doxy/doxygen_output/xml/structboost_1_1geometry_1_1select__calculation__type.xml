@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structboost_1_1geometry_1_1select__calculation__type" kind="struct" language="C++" prot="public">
+    <compoundname>boost::geometry::select_calculation_type</compoundname>
+    <includes local="no">select_calculation_type.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Geometry1</declname>
+        <defname>Geometry1</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>Geometry2</declname>
+        <defname>Geometry2</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>CalculationType</declname>
+        <defname>CalculationType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structboost_1_1geometry_1_1select__calculation__type_1af8d20b6d7ce2d00d50e561719ef18596" prot="public" static="no">
+        <type>std::conditional_t&lt; std::is_void&lt; CalculationType &gt;::value, typename <ref refid="structboost_1_1geometry_1_1select__coordinate__type" kindref="compound">select_coordinate_type</ref>&lt; Geometry1, Geometry2 &gt;::<ref refid="structboost_1_1geometry_1_1select__calculation__type_1af8d20b6d7ce2d00d50e561719ef18596" kindref="member">type</ref>, CalculationType &gt;</type>
+        <definition>typedef std::conditional_t&lt; std::is_void&lt;CalculationType&gt;::value, typename select_coordinate_type &lt; Geometry1, Geometry2 &gt;::type, CalculationType &gt; boost::geometry::select_calculation_type&lt; Geometry1, Geometry2, CalculationType &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_calculation_type.hpp" line="50" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_calculation_type.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Meta-function selecting the &quot;calculation&quot; type. </para>    </briefdescription>
+    <detaileddescription>
+<para>Based on two input geometry types, and an input calculation type, (which defaults to void in the calling function), this meta-function selects the most appropriate:<itemizedlist>
+<listitem><para>if calculation type is specified, that one is used,</para></listitem><listitem><para>if it is void, the most precise of the two points is used </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_calculation_type.hpp" line="40" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_calculation_type.hpp" bodystart="39" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structboost_1_1geometry_1_1select__calculation__type_1af8d20b6d7ce2d00d50e561719ef18596" prot="public" virt="non-virtual"><scope>boost::geometry::select_calculation_type</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

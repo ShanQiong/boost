@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1strategy_1_1within_1_1winding" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::strategy::within::winding</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">within::detail::winding_base_type::type&lt; Point, PointOfSegment, CalculationType &gt;</basecompoundref>
+    <includes local="no">point_in_poly_winding.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Point</type>
+      </param>
+      <param>
+        <type>typename PointOfSegment</type>
+        <defval>Point</defval>
+      </param>
+      <param>
+        <type>typename CalculationType</type>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classboost_1_1geometry_1_1strategy_1_1within_1_1winding_1ab69c63fdee4a967cf19db4145576a884" prot="private" static="no">
+        <type>within::detail::winding_base_type&lt; Point, PointOfSegment, CalculationType &gt;::type</type>
+        <definition>typedef within::detail::winding_base_type&lt; Point, PointOfSegment, CalculationType &gt;::type boost::geometry::strategy::within::winding&lt; Point, PointOfSegment, CalculationType &gt;::base_t</definition>
+        <argsstring></argsstring>
+        <name>base_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/agnostic/point_in_poly_winding.hpp" line="113" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/agnostic/point_in_poly_winding.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1within_1_1winding_1a51cef37c7dfda2a5e6e8e579d11427b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::strategy::within::winding&lt; Point, PointOfSegment, CalculationType &gt;::winding</definition>
+        <argsstring>()</argsstring>
+        <name>winding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/agnostic/point_in_poly_winding.hpp" line="116" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/agnostic/point_in_poly_winding.hpp" bodystart="116" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1within_1_1winding_1a5d78361625dfba191d6dd5853a8e864b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Model</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>boost::geometry::strategy::within::winding&lt; Point, PointOfSegment, CalculationType &gt;::winding</definition>
+        <argsstring>(Model const &amp;model)</argsstring>
+        <name>winding</name>
+        <param>
+          <type>Model const &amp;</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/agnostic/point_in_poly_winding.hpp" line="119" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/agnostic/point_in_poly_winding.hpp" bodystart="119" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Within detection using winding rule. Side strategy used internally is choosen based on Point&apos;s coordinate system. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any type fulfilling a Point Concept </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PointOfSegment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>segment point type </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CalculationType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numeric type for calculation (e.g. high precision); if [*void] then it is extracted automatically from the coordinate type and (if necessary) promoted to floating point</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk>
+[heading See also]
+[link geometry.reference.algorithms.within.within_3_with_strategy within (with strategy)]
+</qbk>  </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2743">
+        <label>within::detail::winding_base_type&lt; Point, PointOfSegment, CalculationType &gt;::type</label>
+      </node>
+      <node id="2742">
+        <label>boost::geometry::strategy::within::winding&lt; Point, PointOfSegment, CalculationType &gt;</label>
+        <link refid="classboost_1_1geometry_1_1strategy_1_1within_1_1winding"/>
+        <childnode refid="2743" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2745">
+        <label>within::detail::winding_base_type&lt; Point, PointOfSegment, CalculationType &gt;::type</label>
+      </node>
+      <node id="2744">
+        <label>boost::geometry::strategy::within::winding&lt; Point, PointOfSegment, CalculationType &gt;</label>
+        <link refid="classboost_1_1geometry_1_1strategy_1_1within_1_1winding"/>
+        <childnode refid="2745" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/agnostic/point_in_poly_winding.hpp" line="109" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/agnostic/point_in_poly_winding.hpp" bodystart="104" bodyend="122"/>
+    <listofallmembers>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1within_1_1winding_1ab69c63fdee4a967cf19db4145576a884" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::within::winding</scope><name>base_t</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1within_1_1winding_1a51cef37c7dfda2a5e6e8e579d11427b7" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::within::winding</scope><name>winding</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1within_1_1winding_1a5d78361625dfba191d6dd5853a8e864b" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::within::winding</scope><name>winding</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

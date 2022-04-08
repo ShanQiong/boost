@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1strategy_1_1centroid_1_1bashein__detmer" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::strategy::centroid::bashein_detmer</compoundname>
+    <includes local="no">centroid_bashein_detmer.hpp</includes>
+    <innerclass refid="structboost_1_1geometry_1_1strategy_1_1centroid_1_1bashein__detmer_1_1calculation__type" prot="private">boost::geometry::strategy::centroid::bashein_detmer::calculation_type</innerclass>
+    <innerclass refid="structboost_1_1geometry_1_1strategy_1_1centroid_1_1bashein__detmer_1_1state__type" prot="public">boost::geometry::strategy::centroid::bashein_detmer::state_type</innerclass>
+    <innerclass refid="classboost_1_1geometry_1_1strategy_1_1centroid_1_1bashein__detmer_1_1sums" prot="private">boost::geometry::strategy::centroid::bashein_detmer::sums</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename Ignored1</type>
+        <defval>void</defval>
+      </param>
+      <param>
+        <type>typename Ignored2</type>
+        <defval>void</defval>
+      </param>
+      <param>
+        <type>typename CalculationType</type>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1centroid_1_1bashein__detmer_1a32f4a20798394144f535b8fe07f9e37c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename GeometryPoint</type>
+          </param>
+          <param>
+            <type>typename ResultPoint</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void boost::geometry::strategy::centroid::bashein_detmer&lt; Ignored1, Ignored2, CalculationType &gt;::apply</definition>
+        <argsstring>(GeometryPoint const &amp;p1, GeometryPoint const &amp;p2, sums&lt; GeometryPoint, ResultPoint &gt; &amp;state)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>GeometryPoint const &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>GeometryPoint const &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>sums&lt; GeometryPoint, ResultPoint &gt; &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/centroid_bashein_detmer.hpp" line="176" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/centroid_bashein_detmer.hpp" bodystart="176" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1centroid_1_1bashein__detmer_1a9ed7060bdb390d1cf3bdf6fa727fa270" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename GeometryPoint</type>
+          </param>
+          <param>
+            <type>typename ResultPoint</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool boost::geometry::strategy::centroid::bashein_detmer&lt; Ignored1, Ignored2, CalculationType &gt;::result</definition>
+        <argsstring>(sums&lt; GeometryPoint, ResultPoint &gt; const &amp;state, ResultPoint &amp;centroid)</argsstring>
+        <name>result</name>
+        <param>
+          <type>sums&lt; GeometryPoint, ResultPoint &gt; const &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>ResultPoint &amp;</type>
+          <declname>centroid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/centroid_bashein_detmer.hpp" line="205" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/centroid_bashein_detmer.hpp" bodystart="205" bodyend="236"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Centroid calculation using algorithm Bashein / Detmer. </para>    </briefdescription>
+    <detaileddescription>
+<para>Calculates centroid using triangulation method published by Bashein / Detmer <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point type of centroid to calculate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PointOfSegment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point type of segments, defaults to Point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CalculationType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numeric type for calculation (e.g. high precision); if [*void] then it is extracted automatically from the coordinate type and (if necessary) promoted to floating point</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="author"><para>Adapted from &quot;Centroid of a Polygon&quot; by Gerard Bashein and Paul R. Detmer<emphasis>, in &quot;Graphics Gems IV&quot;, Academic Press, 1994</emphasis></para></simplesect>
+ <qbk>
+[heading See also]
+[link geometry.reference.algorithms.centroid.centroid_3_with_strategy centroid (with strategy)]
+</qbk>  </para>    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/centroid_bashein_detmer.hpp" line="126" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/centroid_bashein_detmer.hpp" bodystart="125" bodyend="238"/>
+    <listofallmembers>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1centroid_1_1bashein__detmer_1a32f4a20798394144f535b8fe07f9e37c" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::centroid::bashein_detmer</scope><name>apply</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1centroid_1_1bashein__detmer_1a9ed7060bdb390d1cf3bdf6fa727fa270" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::centroid::bashein_detmer</scope><name>result</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

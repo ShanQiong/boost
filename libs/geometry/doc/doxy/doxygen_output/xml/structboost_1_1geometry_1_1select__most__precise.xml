@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structboost_1_1geometry_1_1select__most__precise" kind="struct" language="C++" prot="public">
+    <compoundname>boost::geometry::select_most_precise</compoundname>
+    <includes local="no">select_most_precise.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename ...</type>
+        <declname>Types</declname>
+        <defname>Types</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structboost_1_1geometry_1_1select__most__precise_1ac09bb84190e2d898dfa9798164e9bc37" prot="public" static="no">
+        <type>void</type>
+        <definition>typedef void boost::geometry::select_most_precise&lt; Types &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_most_precise.hpp" line="95" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_most_precise.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Meta-function to select the most accurate type for calculations. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="structboost_1_1geometry_1_1select__most__precise" kindref="compound">select_most_precise</ref> classes, compares types on compile time. For example, if an addition must be done with a double and an integer, the result must be a double. If both types are integer, the result can be an integer. <simplesect kind="note"><para>It is different from the &quot;promote&quot; class, already in boost. That class promotes e.g. a (one) float to a double. This class selects a type from two types. It takes the most accurate, but does not promote afterwards. </para></simplesect>
+<simplesect kind="note"><para>If the input is a non-fundamental type, it might be a calculation type such as a GMP-value or another high precision value. Therefore, if one is non-fundamental, that one is chosen. </para></simplesect>
+<simplesect kind="note"><para>If both types are non-fundamental, the result is indeterminate and currently the first one is chosen. </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_most_precise.hpp" line="94" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/select_most_precise.hpp" bodystart="93" bodyend="96"/>
+    <listofallmembers>
+      <member refid="structboost_1_1geometry_1_1select__most__precise_1ac09bb84190e2d898dfa9798164e9bc37" prot="public" virt="non-virtual"><scope>boost::geometry::select_most_precise</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

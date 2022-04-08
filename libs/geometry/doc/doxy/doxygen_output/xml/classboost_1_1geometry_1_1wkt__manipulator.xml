@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1wkt__manipulator" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::wkt_manipulator</compoundname>
+    <includes local="no">write.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Geometry</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classboost_1_1geometry_1_1wkt__manipulator_1a5de66a9b0fc4432a9bdf14a307cf8954" prot="private" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool boost::geometry::wkt_manipulator&lt; Geometry &gt;::is_ring</definition>
+        <argsstring></argsstring>
+        <name>is_ring</name>
+        <initializer>= <ref refid="structboost_1_1geometry_1_1util_1_1is__ring" kindref="compound">util::is_ring</ref>&lt;Geometry&gt;::value</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/io/wkt/write.hpp" line="541" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/io/wkt/write.hpp" bodystart="541" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classboost_1_1geometry_1_1wkt__manipulator_1ad86547dff392c061cfd4b82efb5fe556" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool boost::geometry::wkt_manipulator&lt; Geometry &gt;::m_force_closure</definition>
+        <argsstring></argsstring>
+        <name>m_force_closure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/io/wkt/write.hpp" line="565" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/io/wkt/write.hpp" bodystart="565" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classboost_1_1geometry_1_1wkt__manipulator_1a6458837a1e63c3f98c13cc085db99042" prot="private" static="no" mutable="no">
+        <type>Geometry const  &amp;</type>
+        <definition>Geometry const&amp; boost::geometry::wkt_manipulator&lt; Geometry &gt;::m_geometry</definition>
+        <argsstring></argsstring>
+        <name>m_geometry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/io/wkt/write.hpp" line="564" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/io/wkt/write.hpp" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1wkt__manipulator_1ae5087378235fdfe55b98ff325ca0c698" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::wkt_manipulator&lt; Geometry &gt;::wkt_manipulator</definition>
+        <argsstring>(Geometry const &amp;g, bool force_closure=! is_ring)</argsstring>
+        <name>wkt_manipulator</name>
+        <param>
+          <type>Geometry const &amp;</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>force_closure</declname>
+          <defval>! is_ring</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/io/wkt/write.hpp" line="547" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/io/wkt/write.hpp" bodystart="547" bodyend="551"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classboost_1_1geometry_1_1wkt__manipulator_1af79aafa1cf45c2e48b99032be002ef37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Char</type>
+          </param>
+          <param>
+            <type>typename Traits</type>
+          </param>
+        </templateparamlist>
+        <type>friend std::basic_ostream&lt; Char, Traits &gt; &amp;</type>
+        <definition>std::basic_ostream&lt;Char, Traits&gt;&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::basic_ostream&lt; Char, Traits &gt; &amp;os, wkt_manipulator const &amp;m)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::basic_ostream&lt; Char, Traits &gt; &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="classboost_1_1geometry_1_1wkt__manipulator" kindref="compound">wkt_manipulator</ref> const &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/io/wkt/write.hpp" line="554" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/io/wkt/write.hpp" bodystart="554" bodyend="561"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Generic geometry template manipulator class, takes corresponding output class from traits class. </para>    </briefdescription>
+    <detaileddescription>
+<para>Stream manipulator, streams geometry classes as <ref refid="_w_k_t" kindref="compound">WKT (Well-Known Text)</ref> streams <simplesect kind="par"><title>Example:</title><para>Small example showing how to use the wkt class  <programlisting><codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>typedef<sp/>boost::geometry::point_xy&lt;double&gt;<sp/>P;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>P<sp/>p(5.12,<sp/>6.34);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Points<sp/>can<sp/>be<sp/>streamed<sp/>like<sp/>this:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>boost::geometry::dsv&lt;P&gt;(p)<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>or<sp/>like<sp/>this:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>boost::geometry::dsv(p)<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>or<sp/>(with<sp/>extension)<sp/>like<sp/>this:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>boost::geometry::wkt(p)<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/io/wkt/write.hpp" line="540" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/io/wkt/write.hpp" bodystart="539" bodyend="566"/>
+    <listofallmembers>
+      <member refid="classboost_1_1geometry_1_1wkt__manipulator_1a5de66a9b0fc4432a9bdf14a307cf8954" prot="private" virt="non-virtual"><scope>boost::geometry::wkt_manipulator</scope><name>is_ring</name></member>
+      <member refid="classboost_1_1geometry_1_1wkt__manipulator_1ad86547dff392c061cfd4b82efb5fe556" prot="private" virt="non-virtual"><scope>boost::geometry::wkt_manipulator</scope><name>m_force_closure</name></member>
+      <member refid="classboost_1_1geometry_1_1wkt__manipulator_1a6458837a1e63c3f98c13cc085db99042" prot="private" virt="non-virtual"><scope>boost::geometry::wkt_manipulator</scope><name>m_geometry</name></member>
+      <member refid="classboost_1_1geometry_1_1wkt__manipulator_1af79aafa1cf45c2e48b99032be002ef37" prot="public" virt="non-virtual"><scope>boost::geometry::wkt_manipulator</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classboost_1_1geometry_1_1wkt__manipulator_1ae5087378235fdfe55b98ff325ca0c698" prot="public" virt="non-virtual"><scope>boost::geometry::wkt_manipulator</scope><name>wkt_manipulator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

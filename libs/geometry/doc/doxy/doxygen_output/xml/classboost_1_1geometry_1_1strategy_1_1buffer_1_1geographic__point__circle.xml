@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1strategy_1_1buffer_1_1geographic__point__circle" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::strategy::buffer::geographic_point_circle</compoundname>
+    <includes local="no">buffer_point_circle.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename FormulaPolicy</type>
+        <defval><ref refid="structboost_1_1geometry_1_1strategy_1_1andoyer" kindref="compound">strategy::andoyer</ref></defval>
+      </param>
+      <param>
+        <type>typename Spheroid</type>
+        <defval><ref refid="classboost_1_1geometry_1_1srs_1_1spheroid" kindref="compound">srs::spheroid</ref>&lt;double&gt;</defval>
+      </param>
+      <param>
+        <type>typename CalculationType</type>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classboost_1_1geometry_1_1strategy_1_1buffer_1_1geographic__point__circle_1a85fc9825a7e5c0563cd53c7744a1292c" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t boost::geometry::strategy::buffer::geographic_point_circle&lt; FormulaPolicy, Spheroid, CalculationType &gt;::m_count</definition>
+        <argsstring></argsstring>
+        <name>m_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/buffer_point_circle.hpp" line="128" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/buffer_point_circle.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classboost_1_1geometry_1_1strategy_1_1buffer_1_1geographic__point__circle_1ac560fde5dcb89432655b7363ea788788" prot="private" static="no" mutable="no">
+        <type>Spheroid</type>
+        <definition>Spheroid boost::geometry::strategy::buffer::geographic_point_circle&lt; FormulaPolicy, Spheroid, CalculationType &gt;::m_spheroid</definition>
+        <argsstring></argsstring>
+        <name>m_spheroid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/buffer_point_circle.hpp" line="129" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/buffer_point_circle.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1buffer_1_1geographic__point__circle_1aa5c9c444e092d7181a2f2bdb20816746" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::strategy::buffer::geographic_point_circle&lt; FormulaPolicy, Spheroid, CalculationType &gt;::geographic_point_circle</definition>
+        <argsstring>(std::size_t count=90)</argsstring>
+        <name>geographic_point_circle</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>count</declname>
+          <defval>90</defval>
+        </param>
+        <briefdescription>
+<para>Constructs the strategy. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of points for the created circle (if count is smaller than 3, count is internally set to 3) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/buffer_point_circle.hpp" line="61" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/buffer_point_circle.hpp" bodystart="61" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Create a circular buffer around a point, on the Earth. </para>    </briefdescription>
+    <detaileddescription>
+<para>This strategy can be used as PointStrategy for the buffer algorithm. It creates a circular buffer around a point, on the Earth. It can be applied for points and multi_points.</para><para> <qbk>
+[heading Example]
+[buffer_geographic_point_circle]
+[buffer_geographic_point_circle_output]
+[heading See also]
+\* [link geometry.reference.algorithms.buffer.buffer_7_with_strategies buffer (with strategies)]
+\* [link geometry.reference.strategies.strategy_buffer_point_circle point_circle]
+\* [link geometry.reference.strategies.strategy_buffer_point_square point_square]
+</qbk>  </para>    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/buffer_point_circle.hpp" line="56" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/buffer_point_circle.hpp" bodystart="55" bodyend="130"/>
+    <listofallmembers>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1buffer_1_1geographic__point__circle_1aa5c9c444e092d7181a2f2bdb20816746" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::buffer::geographic_point_circle</scope><name>geographic_point_circle</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1buffer_1_1geographic__point__circle_1a85fc9825a7e5c0563cd53c7744a1292c" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::buffer::geographic_point_circle</scope><name>m_count</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1buffer_1_1geographic__point__circle_1ac560fde5dcb89432655b7363ea788788" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::buffer::geographic_point_circle</scope><name>m_spheroid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

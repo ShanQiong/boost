@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__line__interpolate" kind="group">
+    <compoundname>line_interpolate</compoundname>
+    <title>line_interpolate: interpolates points on a linestring</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__line__interpolate_1gac8297bdbc0ab09ac0d60ade988be4ed1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Geometry</type>
+          </param>
+          <param>
+            <type>typename Distance</type>
+          </param>
+          <param>
+            <type>typename Pointlike</type>
+          </param>
+          <param>
+            <type>typename Strategy</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::geometry::line_interpolate</definition>
+        <argsstring>(Geometry const &amp;geometry, Distance const &amp;max_distance, Pointlike &amp;pointlike, Strategy const &amp;strategy)</argsstring>
+        <name>line_interpolate</name>
+        <param>
+          <type>Geometry const &amp;</type>
+          <declname>geometry</declname>
+        </param>
+        <param>
+          <type>Distance const &amp;</type>
+          <declname>max_distance</declname>
+        </param>
+        <param>
+          <type>Pointlike &amp;</type>
+          <declname>pointlike</declname>
+        </param>
+        <param>
+          <type>Strategy const &amp;</type>
+          <declname>strategy</declname>
+        </param>
+        <briefdescription>
+<para>Returns one or more points interpolated along a LineString using the specified strategy. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any type fulfilling a LineString concept </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A numerical distance measure </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Pointlike</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any type fulfilling Point or Multipoint concept </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Strategy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A type fulfilling a LineInterpolatePointStrategy concept </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input geometry </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance threshold (in units depending on coordinate system) representing the spacing between the points </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pointlike</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: either a Point (exactly one point will be constructed) or a MultiPoint (depending on the max_distance one or more points will be constructed) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>strategy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>line_interpolate strategy to be used for interpolation of points</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk>[include reference/algorithms/line_interpolate.qbk]</qbk> </para><para> <qbk.distinguish>with strategy</qbk.distinguish> </para><para> <qbk>
+[heading Available Strategies]
+\* [link geometry.reference.strategies.strategy_line_interpolate_cartesian Cartesian]
+\* [link geometry.reference.strategies.strategy_line_interpolate_spherical Spherical]
+\* [link geometry.reference.strategies.strategy_line_interpolate_geographic Geographic]
+
+[heading Example]
+[line_interpolate_strategy]
+[line_interpolate_strategy_output]
+
+[heading See also]
+\* [link geometry.reference.algorithms.densify densify]
+</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/line_interpolate.hpp" line="391" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/line_interpolate.hpp" bodystart="391" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="group__line__interpolate_1ga094596895794d83e90ff9312403a75b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Geometry</type>
+          </param>
+          <param>
+            <type>typename Distance</type>
+          </param>
+          <param>
+            <type>typename Pointlike</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::geometry::line_interpolate</definition>
+        <argsstring>(Geometry const &amp;geometry, Distance const &amp;max_distance, Pointlike &amp;pointlike)</argsstring>
+        <name>line_interpolate</name>
+        <param>
+          <type>Geometry const &amp;</type>
+          <declname>geometry</declname>
+        </param>
+        <param>
+          <type>Distance const &amp;</type>
+          <declname>max_distance</declname>
+        </param>
+        <param>
+          <type>Pointlike &amp;</type>
+          <declname>pointlike</declname>
+        </param>
+        <briefdescription>
+<para>Returns one or more points interpolated along a LineString. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any type fulfilling a LineString concept </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A numerical distance measure </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Pointlike</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any type fulfilling Point or Multipoint concept </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input geometry </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance threshold (in units depending on coordinate system) representing the spacing between the points </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pointlike</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: either a Point (exactly one point will be constructed) or a MultiPoint (depending on the max_distance one or more points will be constructed)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk>[include reference/algorithms/line_interpolate.qbk]
+
+[heading Example]
+[line_interpolate]
+[line_interpolate_output]
+
+[heading See also]
+\* [link geometry.reference.algorithms.densify densify]
+</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/line_interpolate.hpp" line="428" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/line_interpolate.hpp" bodystart="428" bodyend="438"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

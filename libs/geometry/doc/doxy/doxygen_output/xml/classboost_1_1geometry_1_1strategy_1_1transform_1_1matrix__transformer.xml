@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1strategy_1_1transform_1_1matrix__transformer" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::strategy::transform::matrix_transformer</compoundname>
+    <basecompoundref refid="classboost_1_1geometry_1_1strategy_1_1transform_1_1detail_1_1matrix__transformer_1_1matrix__transformer" prot="public" virt="non-virtual">boost::geometry::strategy::transform::detail::matrix_transformer::matrix_transformer&lt; CalculationType, Dimension1, Dimension2 &gt;</basecompoundref>
+    <derivedcompoundref refid="classboost_1_1geometry_1_1strategy_1_1transform_1_1inverse__transformer" prot="public" virt="non-virtual">boost::geometry::strategy::transform::inverse_transformer&lt; CalculationType, Dimension1, Dimension2 &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classboost_1_1geometry_1_1strategy_1_1transform_1_1map__transformer" prot="public" virt="non-virtual">boost::geometry::strategy::transform::map_transformer&lt; CalculationType, Dimension1, Dimension2, Mirror, SameScale &gt;</derivedcompoundref>
+    <includes local="no">matrix_transformers.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>CalculationType</declname>
+        <defname>CalculationType</defname>
+      </param>
+      <param>
+        <type>std::size_t</type>
+        <declname>Dimension1</declname>
+        <defname>Dimension1</defname>
+      </param>
+      <param>
+        <type>std::size_t</type>
+        <declname>Dimension2</declname>
+        <defname>Dimension2</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1transform_1_1matrix__transformer_1a595375513004b3bb9eb8b92d522ee1df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Matrix</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>boost::geometry::strategy::transform::matrix_transformer&lt; CalculationType, Dimension1, Dimension2 &gt;::matrix_transformer</definition>
+        <argsstring>(Matrix const &amp;matrix)</argsstring>
+        <name>matrix_transformer</name>
+        <param>
+          <type>Matrix const &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/transform/matrix_transformers.hpp" line="159" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/transform/matrix_transformers.hpp" bodystart="159" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1transform_1_1matrix__transformer_1a32f74aed48fef8826d4d71f8074ae088" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::strategy::transform::matrix_transformer&lt; CalculationType, Dimension1, Dimension2 &gt;::matrix_transformer</definition>
+        <argsstring>()</argsstring>
+        <name>matrix_transformer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/transform/matrix_transformers.hpp" line="163" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/transform/matrix_transformers.hpp" bodystart="163" bodyend="163"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Affine transformation strategy in Cartesian system. </para>    </briefdescription>
+    <detaileddescription>
+<para>The strategy serves as a generic definition of an affine transformation matrix and procedure for applying it to a given point. <simplesect kind="see"><para><ulink url="http://en.wikipedia.org/wiki/Affine_transformation">http://en.wikipedia.org/wiki/Affine_transformation</ulink> and <ulink url="http://www.devmaster.net/wiki/Transformation_matrices">http://www.devmaster.net/wiki/Transformation_matrices</ulink></para></simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Dimension1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of dimensions to transform from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Dimension2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of dimensions to transform to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2567">
+        <label>boost::geometry::strategy::transform::detail::matrix_transformer::matrix_transformer&lt; CalculationType, Dimension1, Dimension2 &gt;</label>
+        <link refid="classboost_1_1geometry_1_1strategy_1_1transform_1_1detail_1_1matrix__transformer_1_1matrix__transformer"/>
+      </node>
+      <node id="2569">
+        <label>boost::geometry::strategy::transform::map_transformer&lt; CalculationType, Dimension1, Dimension2 &gt;</label>
+        <link refid="classboost_1_1geometry_1_1strategy_1_1transform_1_1map__transformer"/>
+        <childnode refid="2566" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2566">
+        <label>boost::geometry::strategy::transform::matrix_transformer&lt; CalculationType, Dimension1, Dimension2 &gt;</label>
+        <link refid="classboost_1_1geometry_1_1strategy_1_1transform_1_1matrix__transformer"/>
+        <childnode refid="2567" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2568">
+        <label>boost::geometry::strategy::transform::inverse_transformer&lt; CalculationType, Dimension1, Dimension2 &gt;</label>
+        <link refid="classboost_1_1geometry_1_1strategy_1_1transform_1_1inverse__transformer"/>
+        <childnode refid="2566" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2571">
+        <label>boost::geometry::strategy::transform::detail::matrix_transformer::matrix_transformer&lt; CalculationType, Dimension1, Dimension2 &gt;</label>
+        <link refid="classboost_1_1geometry_1_1strategy_1_1transform_1_1detail_1_1matrix__transformer_1_1matrix__transformer"/>
+      </node>
+      <node id="2570">
+        <label>boost::geometry::strategy::transform::matrix_transformer&lt; CalculationType, Dimension1, Dimension2 &gt;</label>
+        <link refid="classboost_1_1geometry_1_1strategy_1_1transform_1_1matrix__transformer"/>
+        <childnode refid="2571" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/transform/matrix_transformers.hpp" line="156" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/transform/matrix_transformers.hpp" bodystart="155" bodyend="164"/>
+    <listofallmembers>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1transform_1_1detail_1_1matrix__transformer_1_1matrix__transformer_1a489e8034a1287cc8135af6c1e319769b" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::transform::matrix_transformer</scope><name>apply</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1transform_1_1detail_1_1matrix__transformer_1_1matrix__transformer_1a0be9b4b743a420e6fe20d74ed2019e54" prot="protected" virt="non-virtual"><scope>boost::geometry::strategy::transform::matrix_transformer</scope><name>ct</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1transform_1_1detail_1_1matrix__transformer_1_1matrix__transformer_1a8844407a3038db0f23c864e96c4c97c8" prot="protected" virt="non-virtual"><scope>boost::geometry::strategy::transform::matrix_transformer</scope><name>m_matrix</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1transform_1_1detail_1_1matrix__transformer_1_1matrix__transformer_1a2a27406dbcd327ca36d088ae903a1b2a" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::transform::matrix_transformer</scope><name>matrix</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1transform_1_1matrix__transformer_1a595375513004b3bb9eb8b92d522ee1df" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::transform::matrix_transformer</scope><name>matrix_transformer</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1transform_1_1matrix__transformer_1a32f74aed48fef8826d4d71f8074ae088" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::transform::matrix_transformer</scope><name>matrix_transformer</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1transform_1_1detail_1_1matrix__transformer_1_1matrix__transformer_1ae994d0270fb2026efb3fc9959dd6b130" prot="protected" virt="non-virtual"><scope>boost::geometry::strategy::transform::matrix_transformer</scope><name>matrix_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

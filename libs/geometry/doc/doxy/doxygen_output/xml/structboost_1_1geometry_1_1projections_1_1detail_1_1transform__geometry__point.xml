@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structboost_1_1geometry_1_1projections_1_1detail_1_1transform__geometry__point" kind="struct" language="C++" prot="public">
+    <compoundname>boost::geometry::projections::detail::transform_geometry_point</compoundname>
+    <includes local="no">transformation.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Geometry</declname>
+        <defname>Geometry</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>CT</declname>
+        <defname>CT</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structboost_1_1geometry_1_1projections_1_1detail_1_1transform__geometry__point_1aa31b6726319b1774f964fc4fa3f6a6bd" prot="public" static="no">
+        <type><ref refid="structboost_1_1geometry_1_1point__type" kindref="compound">geometry::point_type</ref>&lt; Geometry &gt;::<ref refid="structboost_1_1geometry_1_1projections_1_1detail_1_1transform__geometry__point_1abb1b3ba73d324f8c733bbeb26477ba93" kindref="member">type</ref></type>
+        <definition>typedef geometry::point_type&lt;Geometry&gt;::type boost::geometry::projections::detail::transform_geometry_point&lt; Geometry, CT &gt;::point_type</definition>
+        <argsstring></argsstring>
+        <name>point_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="95" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structboost_1_1geometry_1_1projections_1_1detail_1_1transform__geometry__point_1abb1b3ba73d324f8c733bbeb26477ba93" prot="public" static="no">
+        <type><ref refid="classboost_1_1geometry_1_1model_1_1point" kindref="compound">geometry::model::point</ref>&lt; typename <ref refid="structboost_1_1geometry_1_1select__most__precise" kindref="compound">select_most_precise</ref>&lt; typename <ref refid="structboost_1_1geometry_1_1coordinate__type" kindref="compound">geometry::coordinate_type</ref>&lt; <ref refid="structboost_1_1geometry_1_1projections_1_1detail_1_1transform__geometry__point_1aa31b6726319b1774f964fc4fa3f6a6bd" kindref="member">point_type</ref> &gt;::<ref refid="structboost_1_1geometry_1_1projections_1_1detail_1_1transform__geometry__point_1abb1b3ba73d324f8c733bbeb26477ba93" kindref="member">type</ref>, CT &gt;::<ref refid="structboost_1_1geometry_1_1projections_1_1detail_1_1transform__geometry__point_1abb1b3ba73d324f8c733bbeb26477ba93" kindref="member">type</ref>, <ref refid="structboost_1_1geometry_1_1dimension" kindref="compound">geometry::dimension</ref>&lt; <ref refid="structboost_1_1geometry_1_1projections_1_1detail_1_1transform__geometry__point_1aa31b6726319b1774f964fc4fa3f6a6bd" kindref="member">point_type</ref> &gt;::type::value, typename <ref refid="structboost_1_1geometry_1_1coordinate__system" kindref="compound">geometry::coordinate_system</ref>&lt; <ref refid="structboost_1_1geometry_1_1projections_1_1detail_1_1transform__geometry__point_1aa31b6726319b1774f964fc4fa3f6a6bd" kindref="member">point_type</ref> &gt;::<ref refid="structboost_1_1geometry_1_1projections_1_1detail_1_1transform__geometry__point_1abb1b3ba73d324f8c733bbeb26477ba93" kindref="member">type</ref> &gt;</type>
+        <definition>typedef geometry::model::point&lt; typename select_most_precise &lt; typename geometry::coordinate_type&lt;point_type&gt;::type, CT &gt;::type, geometry::dimension&lt;point_type&gt;::type::value, typename geometry::coordinate_system&lt;point_type&gt;::type &gt; boost::geometry::projections::detail::transform_geometry_point&lt; Geometry, CT &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="106" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structboost_1_1geometry_1_1projections_1_1detail_1_1transform__geometry__point_1a36c0574721bda993807b4d25a23ea715" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename PtIn</type>
+          </param>
+          <param>
+            <type>typename PtOut</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void boost::geometry::projections::detail::transform_geometry_point&lt; Geometry, CT &gt;::apply</definition>
+        <argsstring>(PtIn const &amp;in, PtOut &amp;out, bool enable_angles)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>PtIn const &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>PtOut &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enable_angles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="109" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="109" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="94" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="93" bodyend="114"/>
+    <listofallmembers>
+      <member refid="structboost_1_1geometry_1_1projections_1_1detail_1_1transform__geometry__point_1a36c0574721bda993807b4d25a23ea715" prot="public" virt="non-virtual"><scope>boost::geometry::projections::detail::transform_geometry_point</scope><name>apply</name></member>
+      <member refid="structboost_1_1geometry_1_1projections_1_1detail_1_1transform__geometry__point_1aa31b6726319b1774f964fc4fa3f6a6bd" prot="public" virt="non-virtual"><scope>boost::geometry::projections::detail::transform_geometry_point</scope><name>point_type</name></member>
+      <member refid="structboost_1_1geometry_1_1projections_1_1detail_1_1transform__geometry__point_1abb1b3ba73d324f8c733bbeb26477ba93" prot="public" virt="non-virtual"><scope>boost::geometry::projections::detail::transform_geometry_point</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

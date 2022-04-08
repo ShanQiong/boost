@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1strategy_1_1within_1_1crossings__multiply" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::strategy::within::crossings_multiply</compoundname>
+    <includes local="no">point_in_poly_crossings_multiply.hpp</includes>
+    <innerclass refid="structboost_1_1geometry_1_1strategy_1_1within_1_1crossings__multiply_1_1calculation__type" prot="private">boost::geometry::strategy::within::crossings_multiply::calculation_type</innerclass>
+    <innerclass refid="classboost_1_1geometry_1_1strategy_1_1within_1_1crossings__multiply_1_1flags" prot="private">boost::geometry::strategy::within::crossings_multiply::flags</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename Point_</type>
+      </param>
+      <param>
+        <type>typename PointOfSegment_</type>
+        <defval>Point_</defval>
+      </param>
+      <param>
+        <type>typename CalculationType</type>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classboost_1_1geometry_1_1strategy_1_1within_1_1crossings__multiply_1a0699eec291d93f92c373bf7efe968238" prot="public" static="no">
+        <type>flags</type>
+        <definition>typedef flags boost::geometry::strategy::within::crossings_multiply&lt; Point_, PointOfSegment_, CalculationType &gt;::state_type</definition>
+        <argsstring></argsstring>
+        <name>state_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/point_in_poly_crossings_multiply.hpp" line="85" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/point_in_poly_crossings_multiply.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1within_1_1crossings__multiply_1afdd3f2b746886f275e56a64ae5de31c7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Point</type>
+          </param>
+          <param>
+            <type>typename PointOfSegment</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool boost::geometry::strategy::within::crossings_multiply&lt; Point_, PointOfSegment_, CalculationType &gt;::apply</definition>
+        <argsstring>(Point const &amp;point, PointOfSegment const &amp;seg1, PointOfSegment const &amp;seg2, flags &amp;state)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>Point const &amp;</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>PointOfSegment const &amp;</type>
+          <declname>seg1</declname>
+        </param>
+        <param>
+          <type>PointOfSegment const &amp;</type>
+          <declname>seg2</declname>
+        </param>
+        <param>
+          <type>flags &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/point_in_poly_crossings_multiply.hpp" line="88" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/point_in_poly_crossings_multiply.hpp" bodystart="88" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1within_1_1crossings__multiply_1a7406755178ec73be60bbf21609352cbd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int boost::geometry::strategy::within::crossings_multiply&lt; Point_, PointOfSegment_, CalculationType &gt;::result</definition>
+        <argsstring>(flags const &amp;state)</argsstring>
+        <name>result</name>
+        <param>
+          <type>flags const &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/point_in_poly_crossings_multiply.hpp" line="120" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/point_in_poly_crossings_multiply.hpp" bodystart="120" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Within detection using cross counting,. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any type fulfilling a Point Concept </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PointOfSegment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>segment point type </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CalculationType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numeric type for calculation (e.g. high precision); if [*void] then it is extracted automatically from the coordinate type and (if necessary) promoted to floating point </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ulink url="http://tog.acm.org/resources/GraphicsGems/gemsiv/ptpoly_haines/ptinpoly.c">http://tog.acm.org/resources/GraphicsGems/gemsiv/ptpoly_haines/ptinpoly.c</ulink> </para></simplesect>
+<simplesect kind="note"><para>Does NOT work correctly for point ON border  <qbk>
+[heading See also]
+[link geometry.reference.algorithms.within.within_3_with_strategy within (with strategy)]
+</qbk>  </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/point_in_poly_crossings_multiply.hpp" line="55" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/point_in_poly_crossings_multiply.hpp" bodystart="54" bodyend="124"/>
+    <listofallmembers>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1within_1_1crossings__multiply_1afdd3f2b746886f275e56a64ae5de31c7" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::within::crossings_multiply</scope><name>apply</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1within_1_1crossings__multiply_1a7406755178ec73be60bbf21609352cbd" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::within::crossings_multiply</scope><name>result</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1within_1_1crossings__multiply_1a0699eec291d93f92c373bf7efe968238" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::within::crossings_multiply</scope><name>state_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

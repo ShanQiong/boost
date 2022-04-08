@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structboost_1_1geometry_1_1strategy_1_1side_1_1side__robust" kind="struct" language="C++" prot="public">
+    <compoundname>boost::geometry::strategy::side::side_robust</compoundname>
+    <includes local="no">side_robust.hpp</includes>
+    <innerclass refid="structboost_1_1geometry_1_1strategy_1_1side_1_1side__robust_1_1epsilon__policy" prot="public">boost::geometry::strategy::side::side_robust::epsilon_policy</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename CalculationType</type>
+        <defval>void</defval>
+      </param>
+      <param>
+        <type>typename EqualsPolicy</type>
+        <defval><ref refid="structboost_1_1geometry_1_1strategy_1_1side_1_1epsilon__equals__policy" kindref="compound">epsilon_equals_policy</ref></defval>
+      </param>
+      <param>
+        <type>std::size_t</type>
+        <declname>Robustness</declname>
+        <defname>Robustness</defname>
+        <defval>3</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structboost_1_1geometry_1_1strategy_1_1side_1_1side__robust_1a3a41d1dfe09d83ab13f84dd88eef1e53" prot="public" static="no">
+        <type><ref refid="structboost_1_1geometry_1_1cartesian__tag" kindref="compound">cartesian_tag</ref></type>
+        <definition>typedef cartesian_tag boost::geometry::strategy::side::side_robust&lt; CalculationType, EqualsPolicy, Robustness &gt;::cs_tag</definition>
+        <argsstring></argsstring>
+        <name>cs_tag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/cartesian/side_robust.hpp" line="99" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/cartesian/side_robust.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1side_1_1side__robust_1ace8f73d22c0a935ea01e406a3fc3fc76" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename PromotedType</type>
+          </param>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+          <param>
+            <type>typename P</type>
+          </param>
+          <param>
+            <type>typename EpsPolicyInternal</type>
+          </param>
+          <param>
+            <type>std::enable_if_t&lt; std::is_fundamental&lt; PromotedType &gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>PromotedType</type>
+        <definition>static PromotedType boost::geometry::strategy::side::side_robust&lt; CalculationType, EqualsPolicy, Robustness &gt;::side_value</definition>
+        <argsstring>(P1 const &amp;p1, P2 const &amp;p2, P const &amp;p, EpsPolicyInternal &amp;eps_policy)</argsstring>
+        <name>side_value</name>
+        <param>
+          <type>P1 const &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2 const &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>P const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>EpsPolicyInternal &amp;</type>
+          <declname>eps_policy</declname>
+        </param>
+        <briefdescription>
+<para>Computes the sign of the CCW triangle p1, p2, p. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/cartesian/side_robust.hpp" line="111" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/cartesian/side_robust.hpp" bodystart="111" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1side_1_1side__robust_1a85cbbd9fcf392b87c29164cadf8bea32" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename PromotedType</type>
+          </param>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+          <param>
+            <type>typename P</type>
+          </param>
+          <param>
+            <type>typename EpsPolicyInternal</type>
+          </param>
+          <param>
+            <type>std::enable_if_t&lt;!std::is_fundamental&lt; PromotedType &gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>static auto boost::geometry::strategy::side::side_robust&lt; CalculationType, EqualsPolicy, Robustness &gt;::side_value</definition>
+        <argsstring>(P1 const &amp;p1, P2 const &amp;p2, P const &amp;p, EpsPolicyInternal &amp;)</argsstring>
+        <name>side_value</name>
+        <param>
+          <type>P1 const &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2 const &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>P const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>EpsPolicyInternal &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/cartesian/side_robust.hpp" line="139" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/cartesian/side_robust.hpp" bodystart="139" bodyend="143"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Adaptive precision predicate to check at which side of a segment a point lies: left of segment (&gt;0), right of segment (&lt; 0), on segment (0). </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>CalculationType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numeric type for calculation (e.g. high precision); if [*void] then it is extracted automatically from the coordinate type and (if necessary) promoted to floating point (numeric_limits&lt;ct&gt;::epsilon() and numeric_limits&lt;ct&gt;::digits must be supported for calculation type ct) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Robustness</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::size_t value from 0 (fastest) to 3 (default, guarantees correct results).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+This predicate determines at which side of a segment a point lies using an algorithm that is adapted from orient2d as described in &quot;Adaptive Precision Floating-Point Arithmetic and Fast Robust Geometric Predicates&quot; by Jonathan Richard Shewchuk ( <ulink url="https://dl.acm.org/citation.cfm?doid=237218.237337">https://dl.acm.org/citation.cfm?doid=237218.237337</ulink> ). More information and copies of the paper can also be found at <ulink url="https://www.cs.cmu.edu/~quake/robust.html">https://www.cs.cmu.edu/~quake/robust.html</ulink> . It is designed to be adaptive in the sense that it should be fast for inputs that lead to correct results with plain float operations but robust for inputs that require higher precision arithmetics. </para>    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/cartesian/side_robust.hpp" line="73" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/cartesian/side_robust.hpp" bodystart="72" bodyend="179"/>
+    <listofallmembers>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1side_1_1side__robust_1a3a41d1dfe09d83ab13f84dd88eef1e53" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::side::side_robust</scope><name>cs_tag</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1side_1_1side__robust_1ace8f73d22c0a935ea01e406a3fc3fc76" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::side::side_robust</scope><name>side_value</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1side_1_1side__robust_1a85cbbd9fcf392b87c29164cadf8bea32" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::side::side_robust</scope><name>side_value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1srs_1_1projection" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::srs::projection</compoundname>
+    <basecompoundref refid="classboost_1_1geometry_1_1projections_1_1projection" prot="public" virt="non-virtual">boost::geometry::projections::projection&lt; Parameters, CT &gt;</basecompoundref>
+    <includes local="no">projection.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Parameters</type>
+        <defval>srs::dynamic</defval>
+      </param>
+      <param>
+        <type>typename CT</type>
+        <defval>double</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classboost_1_1geometry_1_1srs_1_1projection_1abaa661d5bca2a5611943f2e9154311d6" prot="private" static="no">
+        <type><ref refid="classboost_1_1geometry_1_1projections_1_1projection" kindref="compound">projections::projection</ref>&lt; Parameters, CT &gt;</type>
+        <definition>typedef projections::projection&lt;Parameters, CT&gt; boost::geometry::srs::projection&lt; Parameters, CT &gt;::base_t</definition>
+        <argsstring></argsstring>
+        <name>base_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" line="517" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" bodystart="517" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1srs_1_1projection_1af9dc88fb1f7fa9516193d717f0e7b18c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::srs::projection&lt; Parameters, CT &gt;::projection</definition>
+        <argsstring>()</argsstring>
+        <name>projection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" line="520" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" bodystart="520" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1srs_1_1projection_1aa0e802619a0617d751e653cc33b92fe1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::srs::projection&lt; Parameters, CT &gt;::projection</definition>
+        <argsstring>(Parameters const &amp;parameters)</argsstring>
+        <name>projection</name>
+        <param>
+          <type>Parameters const &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" line="523" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" bodystart="523" bodyend="525"/>
+      </memberdef>
+      <memberdef kind="function" id="group__projection_1gae9a7e41b27cf51ce3a72c2a164bf578b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DynamicParameters</type>
+          </param>
+          <param>
+            <type>std::enable_if_t&lt; <ref refid="structboost_1_1geometry_1_1projections_1_1dynamic__parameters" kindref="compound">projections::dynamic_parameters</ref>&lt; DynamicParameters &gt;::is_specialized, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>boost::geometry::srs::projection&lt; Parameters, CT &gt;::projection</definition>
+        <argsstring>(DynamicParameters const &amp;dynamic_parameters)</argsstring>
+        <name>projection</name>
+        <param>
+          <type>DynamicParameters const &amp;</type>
+          <declname>dynamic_parameters</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a projection as a string, using the format with + and =. </para>        </briefdescription>
+        <detaileddescription>
+<para>The projection can be initialized with a string (with the same format as the PROJ4 package) for convenient initialization from, for example, the command line <simplesect kind="par"><title>Example</title><para><computeroutput>srs::proj4(&quot;+proj=labrd +ellps=intl +lon_0=46d26&apos;13.95E +lat_0=18d54S +azi=18d54 +k_0=.9995 +x_0=400000 +y_0=800000&quot;)</computeroutput> for the Madagascar projection. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" line="545" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" bodystart="545" bodyend="547"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Representation of projection. </para>    </briefdescription>
+    <detaileddescription>
+<para>Either dynamic or static projection representation</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>default dynamic tag or static projection parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>calculation type used internally </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1807">
+        <label>boost::geometry::projections::projection&lt; Parameters, CT &gt;</label>
+        <link refid="classboost_1_1geometry_1_1projections_1_1projection"/>
+        <childnode refid="1808" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="1806">
+        <label>boost::geometry::srs::projection&lt; Parameters, CT &gt;</label>
+        <link refid="classboost_1_1geometry_1_1srs_1_1projection"/>
+        <childnode refid="1807" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1808">
+        <label>boost::geometry::projections::proj_wrapper&lt; Parameters, CT &gt;</label>
+        <link refid="classboost_1_1geometry_1_1projections_1_1proj__wrapper"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1810">
+        <label>boost::geometry::projections::projection&lt; Parameters, CT &gt;</label>
+        <link refid="classboost_1_1geometry_1_1projections_1_1projection"/>
+        <childnode refid="1811" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="1809">
+        <label>boost::geometry::srs::projection&lt; Parameters, CT &gt;</label>
+        <link refid="classboost_1_1geometry_1_1srs_1_1projection"/>
+        <childnode refid="1810" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1811">
+        <label>boost::geometry::projections::proj_wrapper&lt; Parameters, CT &gt;</label>
+        <link refid="classboost_1_1geometry_1_1projections_1_1proj__wrapper"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" line="516" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" bodystart="514" bodyend="548"/>
+    <listofallmembers>
+      <member refid="classboost_1_1geometry_1_1srs_1_1projection_1abaa661d5bca2a5611943f2e9154311d6" prot="private" virt="non-virtual"><scope>boost::geometry::srs::projection</scope><name>base_t</name></member>
+      <member refid="classboost_1_1geometry_1_1projections_1_1projection_1a9439cd05f6f445d6262ff6767a0f86d0" prot="public" virt="non-virtual"><scope>boost::geometry::srs::projection</scope><name>forward</name></member>
+      <member refid="classboost_1_1geometry_1_1projections_1_1projection_1aea74a6143b5b043ea181d9af57d941f5" prot="public" virt="non-virtual"><scope>boost::geometry::srs::projection</scope><name>inverse</name></member>
+      <member refid="classboost_1_1geometry_1_1srs_1_1projection_1af9dc88fb1f7fa9516193d717f0e7b18c" prot="public" virt="non-virtual"><scope>boost::geometry::srs::projection</scope><name>projection</name></member>
+      <member refid="classboost_1_1geometry_1_1srs_1_1projection_1aa0e802619a0617d751e653cc33b92fe1" prot="public" virt="non-virtual"><scope>boost::geometry::srs::projection</scope><name>projection</name></member>
+      <member refid="group__projection_1gae9a7e41b27cf51ce3a72c2a164bf578b" prot="public" virt="non-virtual"><scope>boost::geometry::srs::projection</scope><name>projection</name></member>
+      <member refid="classboost_1_1geometry_1_1projections_1_1projection_1a5c0233c0028a4eec9da912b58935ddaa" prot="public" virt="non-virtual" ambiguityscope="projection&lt; Parameters, CT &gt;::"><scope>boost::geometry::srs::projection</scope><name>projection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

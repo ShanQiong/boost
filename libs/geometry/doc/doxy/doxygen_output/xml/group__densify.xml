@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__densify" kind="group">
+    <compoundname>densify</compoundname>
+    <title>densify: add points to geometry, keeping shape</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__densify_1ga4a4257b0d30315eeefb074f609074fc9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Geometry</type>
+          </param>
+          <param>
+            <type>typename Distance</type>
+          </param>
+          <param>
+            <type>typename Strategy</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::geometry::densify</definition>
+        <argsstring>(Geometry const &amp;geometry, Geometry &amp;out, Distance const &amp;max_distance, Strategy const &amp;strategy)</argsstring>
+        <name>densify</name>
+        <param>
+          <type>Geometry const &amp;</type>
+          <declname>geometry</declname>
+        </param>
+        <param>
+          <type>Geometry &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>Distance const &amp;</type>
+          <declname>max_distance</declname>
+        </param>
+        <param>
+          <type>Strategy const &amp;</type>
+          <declname>strategy</declname>
+        </param>
+        <briefdescription>
+<para>Densify a geometry using a specified strategy. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any type fulfilling a Geometry Concept </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A numerical distance measure </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Strategy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A type fulfilling a DensifyStrategy concept </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input geometry, to be densified </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output geometry, densified version of the input geometry </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance threshold (in units depending on strategy) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>strategy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Densify strategy to be used for densification</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk.distinguish>with strategy</qbk.distinguish>   <qbk>[include reference/algorithms/densify.qbk]</qbk> </para><para> <qbk>
+[heading Available Strategies]
+\* [link geometry.reference.strategies.strategy_densify_cartesian Cartesian]
+\* [link geometry.reference.strategies.strategy_densify_spherical Spherical]
+\* [link geometry.reference.strategies.strategy_densify_geographic Geographic]
+
+[heading Example]
+[densify_strategy]
+[densify_strategy_output]
+
+[heading See also]
+\* [link geometry.reference.algorithms.line_interpolate line_interpolate]
+</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/densify.hpp" line="454" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/densify.hpp" bodystart="454" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="group__densify_1ga835d5e4f1d9ccc53728c0495d0055403" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Geometry</type>
+          </param>
+          <param>
+            <type>typename Distance</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::geometry::densify</definition>
+        <argsstring>(Geometry const &amp;geometry, Geometry &amp;out, Distance const &amp;max_distance)</argsstring>
+        <name>densify</name>
+        <param>
+          <type>Geometry const &amp;</type>
+          <declname>geometry</declname>
+        </param>
+        <param>
+          <type>Geometry &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>Distance const &amp;</type>
+          <declname>max_distance</declname>
+        </param>
+        <briefdescription>
+<para>Densify a geometry. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any type fulfilling a Geometry Concept </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A numerical distance measure </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input geometry, to be densified </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output geometry, densified version of the input geometry </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance threshold (in units depending on coordinate system)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk>[include reference/algorithms/densify.qbk]</qbk> </para><para> <qbk>
+[heading Example]
+[densify]
+[densify_output]
+
+[heading See also]
+\* [link geometry.reference.algorithms.line_interpolate line_interpolate]
+</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/densify.hpp" line="496" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/densify.hpp" bodystart="496" bodyend="501"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

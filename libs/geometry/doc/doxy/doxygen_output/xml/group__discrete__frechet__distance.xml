@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__discrete__frechet__distance" kind="group">
+    <compoundname>discrete_frechet_distance</compoundname>
+    <title>discrete_frechet_distance : calculate discrete frechet distance between two geometries</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__discrete__frechet__distance_1ga98222b379e486d11f79d55224533fff6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Geometry1</type>
+          </param>
+          <param>
+            <type>typename Geometry2</type>
+          </param>
+          <param>
+            <type>typename Strategy</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto boost::geometry::discrete_frechet_distance</definition>
+        <argsstring>(Geometry1 const &amp;geometry1, Geometry2 const &amp;geometry2, Strategy const &amp;strategy)</argsstring>
+        <name>discrete_frechet_distance</name>
+        <param>
+          <type>Geometry1 const &amp;</type>
+          <declname>geometry1</declname>
+        </param>
+        <param>
+          <type>Geometry2 const &amp;</type>
+          <declname>geometry2</declname>
+        </param>
+        <param>
+          <type>Strategy const &amp;</type>
+          <declname>strategy</declname>
+        </param>
+        <briefdescription>
+<para>Calculate discrete Frechet distance between two geometries (currently works for LineString-LineString) using specified strategy. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Geometry1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any type fulfilling a Geometry Concept </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Geometry2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any type fulfilling a Geometry Concept </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Strategy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A type fulfilling a DistanceStrategy concept </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geometry1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input geometry </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>geometry2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input geometry </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>strategy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance strategy to be used to calculate Pt-Pt distance</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk.distinguish>with strategy</qbk.distinguish>   <qbk>[include reference/algorithms/discrete_frechet_distance.qbk]</qbk> </para><para> <qbk>
+[heading Available Strategies]
+\* [link geometry.reference.strategies.strategy_distance_pythagoras Pythagoras (cartesian)]
+\* [link geometry.reference.strategies.strategy_distance_haversine Haversine (spherical)]
+[/ \* more (currently extensions): Vincenty, Andoyer (geographic) ]
+
+[heading Example]
+[discrete_frechet_distance_strategy]
+[discrete_frechet_distance_strategy_output]
+</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/discrete_frechet_distance.hpp" line="255" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/discrete_frechet_distance.hpp" bodystart="255" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="group__discrete__frechet__distance_1ga9ba93f03b65d73ab46535c33d2613969" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Geometry1</type>
+          </param>
+          <param>
+            <type>typename Geometry2</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto boost::geometry::discrete_frechet_distance</definition>
+        <argsstring>(Geometry1 const &amp;geometry1, Geometry2 const &amp;geometry2)</argsstring>
+        <name>discrete_frechet_distance</name>
+        <param>
+          <type>Geometry1 const &amp;</type>
+          <declname>geometry1</declname>
+        </param>
+        <param>
+          <type>Geometry2 const &amp;</type>
+          <declname>geometry2</declname>
+        </param>
+        <briefdescription>
+<para>Calculate discrete Frechet distance between two geometries (currently work for LineString-LineString). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Geometry1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any type fulfilling a Geometry Concept </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Geometry2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any type fulfilling a Geometry Concept </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geometry1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input geometry </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>geometry2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input geometry</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk>[include reference/algorithms/discrete_frechet_distance.qbk]</qbk> </para><para> <qbk>
+[heading Example]
+[discrete_frechet_distance]
+[discrete_frechet_distance_output]
+</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/discrete_frechet_distance.hpp" line="285" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/algorithms/discrete_frechet_distance.hpp" bodystart="285" bodyend="292"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

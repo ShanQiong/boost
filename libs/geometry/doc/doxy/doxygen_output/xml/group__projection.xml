@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__projection" kind="group">
+    <compoundname>projection</compoundname>
+    <title>projection: Projection struct&apos;s, classes</title>
+    <innerclass refid="classboost_1_1geometry_1_1srs_1_1projection" prot="public">boost::geometry::srs::projection</innerclass>
+    <innerclass refid="classboost_1_1geometry_1_1srs_1_1transformation" prot="public">boost::geometry::srs::transformation</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__projection_1gae9a7e41b27cf51ce3a72c2a164bf578b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DynamicParameters</type>
+          </param>
+          <param>
+            <type>std::enable_if_t&lt; <ref refid="structboost_1_1geometry_1_1projections_1_1dynamic__parameters" kindref="compound">projections::dynamic_parameters</ref>&lt; DynamicParameters &gt;::is_specialized, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>boost::geometry::srs::projection&lt; Parameters, CT &gt;::projection</definition>
+        <argsstring>(DynamicParameters const &amp;dynamic_parameters)</argsstring>
+        <name>projection</name>
+        <param>
+          <type>DynamicParameters const &amp;</type>
+          <declname>dynamic_parameters</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a projection as a string, using the format with + and =. </para>        </briefdescription>
+        <detaileddescription>
+<para>The projection can be initialized with a string (with the same format as the PROJ4 package) for convenient initialization from, for example, the command line <simplesect kind="par"><title>Example</title><para><computeroutput>srs::proj4(&quot;+proj=labrd +ellps=intl +lon_0=46d26&apos;13.95E +lat_0=18d54S +azi=18d54 +k_0=.9995 +x_0=400000 +y_0=800000&quot;)</computeroutput> for the Madagascar projection. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" line="545" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" bodystart="545" bodyend="547"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

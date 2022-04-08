@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1strategy_1_1envelope_1_1spherical__multipoint" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::strategy::envelope::spherical_multipoint</compoundname>
+    <includes local="no">envelope_multipoint.hpp</includes>
+    <innerclass refid="structboost_1_1geometry_1_1strategy_1_1envelope_1_1spherical__multipoint_1_1coordinate__less" prot="private">boost::geometry::strategy::envelope::spherical_multipoint::coordinate_less</innerclass>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1envelope_1_1spherical__multipoint_1ae4195d4bfec399410b3de3ee7693ec10" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Constants</type>
+          </param>
+          <param>
+            <type>typename MultiPoint</type>
+          </param>
+          <param>
+            <type>typename OutputIterator</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void boost::geometry::strategy::envelope::spherical_multipoint::analyze_point_coordinates</definition>
+        <argsstring>(MultiPoint const &amp;multipoint, bool &amp;has_south_pole, bool &amp;has_north_pole, OutputIterator oit)</argsstring>
+        <name>analyze_point_coordinates</name>
+        <param>
+          <type>MultiPoint const &amp;</type>
+          <declname>multipoint</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>has_south_pole</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>has_north_pole</declname>
+        </param>
+        <param>
+          <type>OutputIterator</type>
+          <declname>oit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/envelope_multipoint.hpp" line="71" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/envelope_multipoint.hpp" bodystart="71" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1envelope_1_1spherical__multipoint_1ae1a2f28c13ec9cb7c4e1bffd246df3e1" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Constants</type>
+          </param>
+          <param>
+            <type>typename Iterator</type>
+          </param>
+          <param>
+            <type>typename LatitudeLess</type>
+          </param>
+          <param>
+            <type>typename CoordinateType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void boost::geometry::strategy::envelope::spherical_multipoint::get_min_max_latitudes</definition>
+        <argsstring>(Iterator const first, Iterator const last, LatitudeLess const &amp;lat_less, bool has_south_pole, bool has_north_pole, CoordinateType &amp;lat_min, CoordinateType &amp;lat_max)</argsstring>
+        <name>get_min_max_latitudes</name>
+        <param>
+          <type>Iterator const</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>Iterator const</type>
+          <declname>last</declname>
+        </param>
+        <param>
+          <type>LatitudeLess const &amp;</type>
+          <declname>lat_less</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>has_south_pole</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>has_north_pole</declname>
+        </param>
+        <param>
+          <type>CoordinateType &amp;</type>
+          <declname>lat_min</declname>
+        </param>
+        <param>
+          <type>CoordinateType &amp;</type>
+          <declname>lat_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/envelope_multipoint.hpp" line="199" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/envelope_multipoint.hpp" bodystart="199" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1envelope_1_1spherical__multipoint_1a96766576cbb320fad45b149e9ed1eb4a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Constants</type>
+          </param>
+          <param>
+            <type>typename PointRange</type>
+          </param>
+          <param>
+            <type>typename LongitudeLess</type>
+          </param>
+          <param>
+            <type>typename CoordinateType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void boost::geometry::strategy::envelope::spherical_multipoint::get_min_max_longitudes</definition>
+        <argsstring>(PointRange &amp;range, LongitudeLess const &amp;lon_less, CoordinateType &amp;lon_min, CoordinateType &amp;lon_max)</argsstring>
+        <name>get_min_max_longitudes</name>
+        <param>
+          <type>PointRange &amp;</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>LongitudeLess const &amp;</type>
+          <declname>lon_less</declname>
+        </param>
+        <param>
+          <type>CoordinateType &amp;</type>
+          <declname>lon_min</declname>
+        </param>
+        <param>
+          <type>CoordinateType &amp;</type>
+          <declname>lon_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/envelope_multipoint.hpp" line="153" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/envelope_multipoint.hpp" bodystart="153" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1envelope_1_1spherical__multipoint_1af7ad952897bed9278b98582e209af599" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SortedRange</type>
+          </param>
+          <param>
+            <type>typename Value</type>
+          </param>
+        </templateparamlist>
+        <type>Value</type>
+        <definition>static Value boost::geometry::strategy::envelope::spherical_multipoint::maximum_gap</definition>
+        <argsstring>(SortedRange const &amp;sorted_range, Value &amp;max_gap_left, Value &amp;max_gap_right)</argsstring>
+        <name>maximum_gap</name>
+        <param>
+          <type>SortedRange const &amp;</type>
+          <declname>sorted_range</declname>
+        </param>
+        <param>
+          <type>Value &amp;</type>
+          <declname>max_gap_left</declname>
+        </param>
+        <param>
+          <type>Value &amp;</type>
+          <declname>max_gap_right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/envelope_multipoint.hpp" line="117" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/envelope_multipoint.hpp" bodystart="117" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1envelope_1_1spherical__multipoint_1a516861f3ce8b56b2bdd26f89f0b35f70" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename MultiPoint</type>
+          </param>
+          <param>
+            <type>typename Box</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void boost::geometry::strategy::envelope::spherical_multipoint::apply</definition>
+        <argsstring>(MultiPoint const &amp;multipoint, Box &amp;mbr)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>MultiPoint const &amp;</type>
+          <declname>multipoint</declname>
+        </param>
+        <param>
+          <type>Box &amp;</type>
+          <declname>mbr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/envelope_multipoint.hpp" line="236" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/envelope_multipoint.hpp" bodystart="236" bodyend="345"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/envelope_multipoint.hpp" line="57" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategy/spherical/envelope_multipoint.hpp" bodystart="56" bodyend="346"/>
+    <listofallmembers>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1envelope_1_1spherical__multipoint_1ae4195d4bfec399410b3de3ee7693ec10" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::envelope::spherical_multipoint</scope><name>analyze_point_coordinates</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1envelope_1_1spherical__multipoint_1a516861f3ce8b56b2bdd26f89f0b35f70" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::envelope::spherical_multipoint</scope><name>apply</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1envelope_1_1spherical__multipoint_1ae1a2f28c13ec9cb7c4e1bffd246df3e1" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::envelope::spherical_multipoint</scope><name>get_min_max_latitudes</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1envelope_1_1spherical__multipoint_1a96766576cbb320fad45b149e9ed1eb4a" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::envelope::spherical_multipoint</scope><name>get_min_max_longitudes</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1envelope_1_1spherical__multipoint_1af7ad952897bed9278b98582e209af599" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::envelope::spherical_multipoint</scope><name>maximum_gap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

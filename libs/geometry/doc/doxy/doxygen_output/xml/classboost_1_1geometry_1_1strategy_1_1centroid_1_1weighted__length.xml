@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1strategy_1_1centroid_1_1weighted__length" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::strategy::centroid::weighted_length</compoundname>
+    <includes local="no">centroid_weighted_length.hpp</includes>
+    <innerclass refid="structboost_1_1geometry_1_1strategy_1_1centroid_1_1weighted__length_1_1calculation__type" prot="private">boost::geometry::strategy::centroid::weighted_length::calculation_type</innerclass>
+    <innerclass refid="structboost_1_1geometry_1_1strategy_1_1centroid_1_1weighted__length_1_1state__type" prot="public">boost::geometry::strategy::centroid::weighted_length::state_type</innerclass>
+    <innerclass refid="classboost_1_1geometry_1_1strategy_1_1centroid_1_1weighted__length_1_1sums" prot="private">boost::geometry::strategy::centroid::weighted_length::sums</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename Ignored1</type>
+        <defval>void</defval>
+      </param>
+      <param>
+        <type>typename Ignored2</type>
+        <defval>void</defval>
+      </param>
+      <param>
+        <type>typename CalculationType</type>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classboost_1_1geometry_1_1strategy_1_1centroid_1_1weighted__length_1aa7e95de1a0666fc01f7d765cc9b9524e" prot="private" static="no">
+        <type><ref refid="classboost_1_1geometry_1_1strategy_1_1distance_1_1pythagoras" kindref="compound">geometry::strategy::distance::pythagoras</ref>&lt; CalculationType &gt;</type>
+        <definition>typedef geometry::strategy::distance::pythagoras&lt;CalculationType&gt; boost::geometry::strategy::centroid::weighted_length&lt; Ignored1, Ignored2, CalculationType &gt;::pythagoras_strategy</definition>
+        <argsstring></argsstring>
+        <name>pythagoras_strategy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/centroid_weighted_length.hpp" line="51" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/centroid_weighted_length.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1centroid_1_1weighted__length_1a6e8ee772261e3d83bb436572c96d966d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename GeometryPoint</type>
+          </param>
+          <param>
+            <type>typename ResultPoint</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void boost::geometry::strategy::centroid::weighted_length&lt; Ignored1, Ignored2, CalculationType &gt;::apply</definition>
+        <argsstring>(GeometryPoint const &amp;p1, GeometryPoint const &amp;p2, sums&lt; GeometryPoint, ResultPoint &gt; &amp;state)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>GeometryPoint const &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>GeometryPoint const &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>sums&lt; GeometryPoint, ResultPoint &gt; &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/centroid_weighted_length.hpp" line="97" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/centroid_weighted_length.hpp" bodystart="97" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1strategy_1_1centroid_1_1weighted__length_1aa040e775ccab6f64468711ccfe3a43a0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename GeometryPoint</type>
+          </param>
+          <param>
+            <type>typename ResultPoint</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool boost::geometry::strategy::centroid::weighted_length&lt; Ignored1, Ignored2, CalculationType &gt;::result</definition>
+        <argsstring>(sums&lt; GeometryPoint, ResultPoint &gt; const &amp;state, ResultPoint &amp;centroid)</argsstring>
+        <name>result</name>
+        <param>
+          <type>sums&lt; GeometryPoint, ResultPoint &gt; const &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>ResultPoint &amp;</type>
+          <declname>centroid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/centroid_weighted_length.hpp" line="116" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/centroid_weighted_length.hpp" bodystart="116" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/centroid_weighted_length.hpp" line="49" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/cartesian/centroid_weighted_length.hpp" bodystart="48" bodyend="143"/>
+    <listofallmembers>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1centroid_1_1weighted__length_1a6e8ee772261e3d83bb436572c96d966d" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::centroid::weighted_length</scope><name>apply</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1centroid_1_1weighted__length_1aa7e95de1a0666fc01f7d765cc9b9524e" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::centroid::weighted_length</scope><name>pythagoras_strategy</name></member>
+      <member refid="classboost_1_1geometry_1_1strategy_1_1centroid_1_1weighted__length_1aa040e775ccab6f64468711ccfe3a43a0" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::centroid::weighted_length</scope><name>result</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

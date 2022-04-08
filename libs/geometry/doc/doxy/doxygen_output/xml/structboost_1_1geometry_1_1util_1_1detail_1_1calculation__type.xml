@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structboost_1_1geometry_1_1util_1_1detail_1_1calculation__type" kind="struct" language="C++" prot="public">
+    <compoundname>boost::geometry::util::detail::calculation_type</compoundname>
+    <includes local="no">calculation_type.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Type</declname>
+        <defname>Type</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>CalculationType</declname>
+        <defname>CalculationType</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>DefaultFloatingPointCalculationType</declname>
+        <defname>DefaultFloatingPointCalculationType</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>DefaultIntegralCalculationType</declname>
+        <defname>DefaultIntegralCalculationType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structboost_1_1geometry_1_1util_1_1detail_1_1calculation__type_1a8b4c296c2c2b4e02c000c184cf858095" prot="public" static="no">
+        <type>std::conditional_t&lt; std::is_void&lt; CalculationType &gt;::value, std::conditional_t&lt; std::is_floating_point&lt; Type &gt;::value, typename <ref refid="structboost_1_1geometry_1_1select__most__precise" kindref="compound">select_most_precise</ref>&lt; DefaultFloatingPointCalculationType, Type &gt;::<ref refid="structboost_1_1geometry_1_1util_1_1detail_1_1calculation__type_1a8b4c296c2c2b4e02c000c184cf858095" kindref="member">type</ref>, typename <ref refid="structboost_1_1geometry_1_1select__most__precise" kindref="compound">select_most_precise</ref>&lt; DefaultIntegralCalculationType, Type &gt;::<ref refid="structboost_1_1geometry_1_1util_1_1detail_1_1calculation__type_1a8b4c296c2c2b4e02c000c184cf858095" kindref="member">type</ref> &gt;, CalculationType &gt;</type>
+        <definition>typedef std::conditional_t&lt; std::is_void&lt;CalculationType&gt;::value, std::conditional_t &lt; std::is_floating_point&lt;Type&gt;::value, typename select_most_precise &lt; DefaultFloatingPointCalculationType, Type &gt;::type, typename select_most_precise &lt; DefaultIntegralCalculationType, Type &gt;::type &gt;, CalculationType &gt; boost::geometry::util::detail::calculation_type&lt; Type, CalculationType, DefaultFloatingPointCalculationType, DefaultIntegralCalculationType &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/calculation_type.hpp" line="88" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/calculation_type.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structboost_1_1geometry_1_1util_1_1detail_1_1calculation__type_1aab2a0d3eca70726fd7b5f3bc555fc369" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::util::detail::calculation_type&lt; Type, CalculationType, DefaultFloatingPointCalculationType, DefaultIntegralCalculationType &gt;::BOOST_STATIC_ASSERT</definition>
+        <argsstring>((std::is_fundamental&lt; DefaultFloatingPointCalculationType &gt;::value))</argsstring>
+        <name>BOOST_STATIC_ASSERT</name>
+        <param>
+          <type>(std::is_fundamental&lt; DefaultFloatingPointCalculationType &gt;::value)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/calculation_type.hpp" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1geometry_1_1util_1_1detail_1_1calculation__type_1a6c6caaacc7cd39924beda173f7cfadaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::util::detail::calculation_type&lt; Type, CalculationType, DefaultFloatingPointCalculationType, DefaultIntegralCalculationType &gt;::BOOST_STATIC_ASSERT</definition>
+        <argsstring>((std::is_fundamental&lt; DefaultIntegralCalculationType &gt;::value))</argsstring>
+        <name>BOOST_STATIC_ASSERT</name>
+        <param>
+          <type>(std::is_fundamental&lt; DefaultIntegralCalculationType &gt;::value)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/calculation_type.hpp" line="62" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Selects the most appropriate:<itemizedlist>
+<listitem><para>if calculation type is specified (not void), that one is used</para></listitem><listitem><para>else if type is non-fundamental (user defined e.g. Boost.Multiprecision), that one</para></listitem><listitem><para>else if type is floating point, the specified default FP is used</para></listitem><listitem><para>else it is integral and the specified default integral is used </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/calculation_type.hpp" line="55" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/calculation_type.hpp" bodystart="54" bodyend="89"/>
+    <listofallmembers>
+      <member refid="structboost_1_1geometry_1_1util_1_1detail_1_1calculation__type_1aab2a0d3eca70726fd7b5f3bc555fc369" prot="public" virt="non-virtual"><scope>boost::geometry::util::detail::calculation_type</scope><name>BOOST_STATIC_ASSERT</name></member>
+      <member refid="structboost_1_1geometry_1_1util_1_1detail_1_1calculation__type_1a6c6caaacc7cd39924beda173f7cfadaf" prot="public" virt="non-virtual"><scope>boost::geometry::util::detail::calculation_type</scope><name>BOOST_STATIC_ASSERT</name></member>
+      <member refid="structboost_1_1geometry_1_1util_1_1detail_1_1calculation__type_1a8b4c296c2c2b4e02c000c184cf858095" prot="public" virt="non-virtual"><scope>boost::geometry::util::detail::calculation_type</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

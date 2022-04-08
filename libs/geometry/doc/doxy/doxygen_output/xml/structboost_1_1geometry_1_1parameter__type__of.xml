@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structboost_1_1geometry_1_1parameter__type__of" kind="struct" language="C++" prot="public">
+    <compoundname>boost::geometry::parameter_type_of</compoundname>
+    <includes local="no">parameter_type_of.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Method</type>
+      </param>
+      <param>
+        <type>std::size_t</type>
+        <declname>Index</declname>
+        <defname>Index</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structboost_1_1geometry_1_1parameter__type__of_1a2079f2e09a6db2957554167ac9a6a95d" prot="public" static="no">
+        <type>std::conditional_t&lt; boost::function_types::is_member_function_pointer&lt; Method &gt;::value, std::integral_constant&lt; int, 1 &gt;, std::integral_constant&lt; int, 0 &gt; &gt;</type>
+        <definition>typedef std::conditional_t&lt; boost::function_types::is_member_function_pointer&lt;Method&gt;::value, std::integral_constant&lt;int, 1&gt;, std::integral_constant&lt;int, 0&gt; &gt; boost::geometry::parameter_type_of&lt; Method, Index &gt;::base_index_type</definition>
+        <argsstring></argsstring>
+        <name>base_index_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/parameter_type_of.hpp" line="51" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/parameter_type_of.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structboost_1_1geometry_1_1parameter__type__of_1aa6de75bb36e0a6e483f391bf02f6c653" prot="public" static="no">
+        <type>std::conditional_t&lt; Index==0, <ref refid="structboost_1_1geometry_1_1parameter__type__of_1a2079f2e09a6db2957554167ac9a6a95d" kindref="member">base_index_type</ref>, std::integral_constant&lt; int,(base_index_type::value+Index) &gt; &gt;</type>
+        <definition>typedef std::conditional_t&lt; Index == 0, base_index_type, std::integral_constant &lt; int, (base_index_type::value + Index) &gt; &gt; boost::geometry::parameter_type_of&lt; Method, Index &gt;::indexed_type</definition>
+        <argsstring></argsstring>
+        <name>indexed_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/parameter_type_of.hpp" line="62" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/parameter_type_of.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structboost_1_1geometry_1_1parameter__type__of_1ac4a307ccf2bc125fa52171ae5e3b8deb" prot="public" static="no">
+        <type>boost::function_types::parameter_types&lt; Method &gt;::<ref refid="structboost_1_1geometry_1_1parameter__type__of_1a59c28b5baac0ce03943cc0e21886a856" kindref="member">type</ref></type>
+        <definition>typedef boost::function_types::parameter_types&lt; Method &gt;::type boost::geometry::parameter_type_of&lt; Method, Index &gt;::parameter_types</definition>
+        <argsstring></argsstring>
+        <name>parameter_types</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/parameter_type_of.hpp" line="44" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/parameter_type_of.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structboost_1_1geometry_1_1parameter__type__of_1a59c28b5baac0ce03943cc0e21886a856" prot="public" static="no">
+        <type>std::remove_reference&lt; typename boost::mpl::at&lt; <ref refid="structboost_1_1geometry_1_1parameter__type__of_1ac4a307ccf2bc125fa52171ae5e3b8deb" kindref="member">parameter_types</ref>, <ref refid="structboost_1_1geometry_1_1parameter__type__of_1aa6de75bb36e0a6e483f391bf02f6c653" kindref="member">indexed_type</ref> &gt;::<ref refid="structboost_1_1geometry_1_1parameter__type__of_1a59c28b5baac0ce03943cc0e21886a856" kindref="member">type</ref> &gt;::<ref refid="structboost_1_1geometry_1_1parameter__type__of_1a59c28b5baac0ce03943cc0e21886a856" kindref="member">type</ref></type>
+        <definition>typedef std::remove_reference&lt; typename boost::mpl::at &lt; parameter_types, indexed_type &gt;::type &gt;::type boost::geometry::parameter_type_of&lt; Method, Index &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/parameter_type_of.hpp" line="71" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/parameter_type_of.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Meta-function selecting a parameter type of a (member) function, by index. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/parameter_type_of.hpp" line="40" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/parameter_type_of.hpp" bodystart="39" bodyend="72"/>
+    <listofallmembers>
+      <member refid="structboost_1_1geometry_1_1parameter__type__of_1a2079f2e09a6db2957554167ac9a6a95d" prot="public" virt="non-virtual"><scope>boost::geometry::parameter_type_of</scope><name>base_index_type</name></member>
+      <member refid="structboost_1_1geometry_1_1parameter__type__of_1aa6de75bb36e0a6e483f391bf02f6c653" prot="public" virt="non-virtual"><scope>boost::geometry::parameter_type_of</scope><name>indexed_type</name></member>
+      <member refid="structboost_1_1geometry_1_1parameter__type__of_1ac4a307ccf2bc125fa52171ae5e3b8deb" prot="public" virt="non-virtual"><scope>boost::geometry::parameter_type_of</scope><name>parameter_types</name></member>
+      <member refid="structboost_1_1geometry_1_1parameter__type__of_1a59c28b5baac0ce03943cc0e21886a856" prot="public" virt="non-virtual"><scope>boost::geometry::parameter_type_of</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

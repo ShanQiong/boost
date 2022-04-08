@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1srs_1_1transformation" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::srs::transformation</compoundname>
+    <includes local="no">transformation.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Proj1</type>
+        <defval>srs::dynamic</defval>
+      </param>
+      <param>
+        <type>typename Proj2</type>
+        <defval>srs::dynamic</defval>
+      </param>
+      <param>
+        <type>typename CT</type>
+        <defval>double</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classboost_1_1geometry_1_1srs_1_1transformation_1a47f38134db33437b0ad3355ff6740551" prot="private" static="no">
+        <type>projections::detail::promote_to_double&lt; CT &gt;::type</type>
+        <definition>typedef projections::detail::promote_to_double&lt;CT&gt;::type boost::geometry::srs::transformation&lt; Proj1, Proj2, CT &gt;::calc_t</definition>
+        <argsstring></argsstring>
+        <name>calc_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="576" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="576" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classboost_1_1geometry_1_1srs_1_1transformation_1a41a1912fe685ee096bbfd76dea2ceb8c" prot="private" static="no" mutable="no">
+        <type><ref refid="classboost_1_1geometry_1_1projections_1_1proj__wrapper" kindref="compound">projections::proj_wrapper</ref>&lt; Proj1, CT &gt;</type>
+        <definition>projections::proj_wrapper&lt;Proj1, CT&gt; boost::geometry::srs::transformation&lt; Proj1, Proj2, CT &gt;::m_proj1</definition>
+        <argsstring></argsstring>
+        <name>m_proj1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="730" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="730" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classboost_1_1geometry_1_1srs_1_1transformation_1a033f9919ccc52f6d2f81e32ceb076da4" prot="private" static="no" mutable="no">
+        <type><ref refid="classboost_1_1geometry_1_1projections_1_1proj__wrapper" kindref="compound">projections::proj_wrapper</ref>&lt; Proj2, CT &gt;</type>
+        <definition>projections::proj_wrapper&lt;Proj2, CT&gt; boost::geometry::srs::transformation&lt; Proj1, Proj2, CT &gt;::m_proj2</definition>
+        <argsstring></argsstring>
+        <name>m_proj2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="731" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="731" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1srs_1_1transformation_1a18a637f203b84e14c11e038b6c170bd6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename GeometryIn</type>
+          </param>
+          <param>
+            <type>typename GeometryOut</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool boost::geometry::srs::transformation&lt; Proj1, Proj2, CT &gt;::forward</definition>
+        <argsstring>(GeometryIn const &amp;in, GeometryOut &amp;out) const</argsstring>
+        <name>forward</name>
+        <param>
+          <type>GeometryIn const &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>GeometryOut &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="664" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="664" bodyend="667"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1srs_1_1transformation_1abd06fa25e475c42fc8ee49ef864beca1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename GeometryIn</type>
+          </param>
+          <param>
+            <type>typename GeometryOut</type>
+          </param>
+          <param>
+            <type>typename GridsStorage</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool boost::geometry::srs::transformation&lt; Proj1, Proj2, CT &gt;::forward</definition>
+        <argsstring>(GeometryIn const &amp;in, GeometryOut &amp;out, transformation_grids&lt; GridsStorage &gt; const &amp;grids) const</argsstring>
+        <name>forward</name>
+        <param>
+          <type>GeometryIn const &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>GeometryOut &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>transformation_grids&lt; GridsStorage &gt; const &amp;</type>
+          <declname>grids</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="676" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="676" bodyend="693"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1srs_1_1transformation_1a57164145a7eeea83bef526d41fa734bd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename GridsStorage</type>
+          </param>
+        </templateparamlist>
+        <type>transformation_grids&lt; GridsStorage &gt;</type>
+        <definition>transformation_grids&lt;GridsStorage&gt; boost::geometry::srs::transformation&lt; Proj1, Proj2, CT &gt;::initialize_grids</definition>
+        <argsstring>(GridsStorage &amp;grids_storage) const</argsstring>
+        <name>initialize_grids</name>
+        <param>
+          <type>GridsStorage &amp;</type>
+          <declname>grids_storage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="716" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="716" bodyend="727"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1srs_1_1transformation_1ab0c8c1979ef67f555bf4d7112add4081" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename GeometryIn</type>
+          </param>
+          <param>
+            <type>typename GeometryOut</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool boost::geometry::srs::transformation&lt; Proj1, Proj2, CT &gt;::inverse</definition>
+        <argsstring>(GeometryIn const &amp;in, GeometryOut &amp;out) const</argsstring>
+        <name>inverse</name>
+        <param>
+          <type>GeometryIn const &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>GeometryOut &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="670" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="670" bodyend="673"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1srs_1_1transformation_1a00a7d38f8f019ee5db85c447afe2ac9c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename GeometryIn</type>
+          </param>
+          <param>
+            <type>typename GeometryOut</type>
+          </param>
+          <param>
+            <type>typename GridsStorage</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool boost::geometry::srs::transformation&lt; Proj1, Proj2, CT &gt;::inverse</definition>
+        <argsstring>(GeometryIn const &amp;in, GeometryOut &amp;out, transformation_grids&lt; GridsStorage &gt; const &amp;grids) const</argsstring>
+        <name>inverse</name>
+        <param>
+          <type>GeometryIn const &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>GeometryOut &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>transformation_grids&lt; GridsStorage &gt; const &amp;</type>
+          <declname>grids</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="696" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="696" bodyend="713"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1srs_1_1transformation_1a2de9c26b58cdddd358d16a45d5e7977a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::srs::transformation&lt; Proj1, Proj2, CT &gt;::transformation</definition>
+        <argsstring>()</argsstring>
+        <name>transformation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="580" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="580" bodyend="581"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1srs_1_1transformation_1a62f6b19a27ee1746b71dda9e0cbebf6a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Parameters1</type>
+          </param>
+          <param>
+            <type>std::enable_if_t&lt; std::is_same&lt; Proj1, srs::dynamic &gt;::value &amp;&amp;<ref refid="structboost_1_1geometry_1_1projections_1_1dynamic__parameters" kindref="compound">projections::dynamic_parameters</ref>&lt; Parameters1 &gt;::is_specialized, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>boost::geometry::srs::transformation&lt; Proj1, Proj2, CT &gt;::transformation</definition>
+        <argsstring>(Parameters1 const &amp;parameters1)</argsstring>
+        <name>transformation</name>
+        <param>
+          <type>Parameters1 const &amp;</type>
+          <declname>parameters1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="594" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="594" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1srs_1_1transformation_1a820ff5e0c7cf0771afaa1d03bc86a27f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::srs::transformation&lt; Proj1, Proj2, CT &gt;::transformation</definition>
+        <argsstring>(Proj1 const &amp;parameters1)</argsstring>
+        <name>transformation</name>
+        <param>
+          <type>Proj1 const &amp;</type>
+          <declname>parameters1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="599" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="599" bodyend="601"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1srs_1_1transformation_1ac5fe9152c5ce1ed4c1560e3d9fdd754e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Parameters1</type>
+          </param>
+          <param>
+            <type>typename Parameters2</type>
+          </param>
+          <param>
+            <type>std::enable_if_t&lt; std::is_same&lt; Proj1, srs::dynamic &gt;::value &amp;&amp;std::is_same&lt; Proj2, srs::dynamic &gt;::value &amp;&amp;<ref refid="structboost_1_1geometry_1_1projections_1_1dynamic__parameters" kindref="compound">projections::dynamic_parameters</ref>&lt; Parameters1 &gt;::is_specialized &amp;&amp;<ref refid="structboost_1_1geometry_1_1projections_1_1dynamic__parameters" kindref="compound">projections::dynamic_parameters</ref>&lt; Parameters2 &gt;::is_specialized, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>boost::geometry::srs::transformation&lt; Proj1, Proj2, CT &gt;::transformation</definition>
+        <argsstring>(Parameters1 const &amp;parameters1, Parameters2 const &amp;parameters2)</argsstring>
+        <name>transformation</name>
+        <param>
+          <type>Parameters1 const &amp;</type>
+          <declname>parameters1</declname>
+        </param>
+        <param>
+          <type>Parameters2 const &amp;</type>
+          <declname>parameters2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="616" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="616" bodyend="620"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1srs_1_1transformation_1abd2c69b97afe21ad9318ae7ba0052f65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Parameters1</type>
+          </param>
+          <param>
+            <type>std::enable_if_t&lt; std::is_same&lt; Proj1, srs::dynamic &gt;::value &amp;&amp;<ref refid="structboost_1_1geometry_1_1projections_1_1dynamic__parameters" kindref="compound">projections::dynamic_parameters</ref>&lt; Parameters1 &gt;::is_specialized, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>boost::geometry::srs::transformation&lt; Proj1, Proj2, CT &gt;::transformation</definition>
+        <argsstring>(Parameters1 const &amp;parameters1, Proj2 const &amp;parameters2)</argsstring>
+        <name>transformation</name>
+        <param>
+          <type>Parameters1 const &amp;</type>
+          <declname>parameters1</declname>
+        </param>
+        <param>
+          <type>Proj2 const &amp;</type>
+          <declname>parameters2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="633" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="633" bodyend="637"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1srs_1_1transformation_1aae76b5c8750e810f1160b43ac80d9b39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Parameters2</type>
+          </param>
+          <param>
+            <type>std::enable_if_t&lt; std::is_same&lt; Proj2, srs::dynamic &gt;::value &amp;&amp;<ref refid="structboost_1_1geometry_1_1projections_1_1dynamic__parameters" kindref="compound">projections::dynamic_parameters</ref>&lt; Parameters2 &gt;::is_specialized, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>boost::geometry::srs::transformation&lt; Proj1, Proj2, CT &gt;::transformation</definition>
+        <argsstring>(Proj1 const &amp;parameters1, Parameters2 const &amp;parameters2)</argsstring>
+        <name>transformation</name>
+        <param>
+          <type>Proj1 const &amp;</type>
+          <declname>parameters1</declname>
+        </param>
+        <param>
+          <type>Parameters2 const &amp;</type>
+          <declname>parameters2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="650" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="650" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1srs_1_1transformation_1a48fe82b9ad4421b2acfa906bb331ece9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::srs::transformation&lt; Proj1, Proj2, CT &gt;::transformation</definition>
+        <argsstring>(Proj1 const &amp;parameters1, Proj2 const &amp;parameters2)</argsstring>
+        <name>transformation</name>
+        <param>
+          <type>Proj1 const &amp;</type>
+          <declname>parameters1</declname>
+        </param>
+        <param>
+          <type>Proj2 const &amp;</type>
+          <declname>parameters2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="657" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="657" bodyend="661"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Representation of projection. </para>    </briefdescription>
+    <detaileddescription>
+<para>Either dynamic or static projection representation</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Proj1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>default_dynamic or static projection parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Proj2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>default_dynamic or static projection parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>calculation type used internally </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" line="575" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/transformation.hpp" bodystart="574" bodyend="732"/>
+    <listofallmembers>
+      <member refid="classboost_1_1geometry_1_1srs_1_1transformation_1a47f38134db33437b0ad3355ff6740551" prot="private" virt="non-virtual"><scope>boost::geometry::srs::transformation</scope><name>calc_t</name></member>
+      <member refid="classboost_1_1geometry_1_1srs_1_1transformation_1a18a637f203b84e14c11e038b6c170bd6" prot="public" virt="non-virtual"><scope>boost::geometry::srs::transformation</scope><name>forward</name></member>
+      <member refid="classboost_1_1geometry_1_1srs_1_1transformation_1abd06fa25e475c42fc8ee49ef864beca1" prot="public" virt="non-virtual"><scope>boost::geometry::srs::transformation</scope><name>forward</name></member>
+      <member refid="classboost_1_1geometry_1_1srs_1_1transformation_1a57164145a7eeea83bef526d41fa734bd" prot="public" virt="non-virtual"><scope>boost::geometry::srs::transformation</scope><name>initialize_grids</name></member>
+      <member refid="classboost_1_1geometry_1_1srs_1_1transformation_1ab0c8c1979ef67f555bf4d7112add4081" prot="public" virt="non-virtual"><scope>boost::geometry::srs::transformation</scope><name>inverse</name></member>
+      <member refid="classboost_1_1geometry_1_1srs_1_1transformation_1a00a7d38f8f019ee5db85c447afe2ac9c" prot="public" virt="non-virtual"><scope>boost::geometry::srs::transformation</scope><name>inverse</name></member>
+      <member refid="classboost_1_1geometry_1_1srs_1_1transformation_1a41a1912fe685ee096bbfd76dea2ceb8c" prot="private" virt="non-virtual"><scope>boost::geometry::srs::transformation</scope><name>m_proj1</name></member>
+      <member refid="classboost_1_1geometry_1_1srs_1_1transformation_1a033f9919ccc52f6d2f81e32ceb076da4" prot="private" virt="non-virtual"><scope>boost::geometry::srs::transformation</scope><name>m_proj2</name></member>
+      <member refid="classboost_1_1geometry_1_1srs_1_1transformation_1a2de9c26b58cdddd358d16a45d5e7977a" prot="public" virt="non-virtual"><scope>boost::geometry::srs::transformation</scope><name>transformation</name></member>
+      <member refid="classboost_1_1geometry_1_1srs_1_1transformation_1a62f6b19a27ee1746b71dda9e0cbebf6a" prot="public" virt="non-virtual"><scope>boost::geometry::srs::transformation</scope><name>transformation</name></member>
+      <member refid="classboost_1_1geometry_1_1srs_1_1transformation_1a820ff5e0c7cf0771afaa1d03bc86a27f" prot="public" virt="non-virtual"><scope>boost::geometry::srs::transformation</scope><name>transformation</name></member>
+      <member refid="classboost_1_1geometry_1_1srs_1_1transformation_1ac5fe9152c5ce1ed4c1560e3d9fdd754e" prot="public" virt="non-virtual"><scope>boost::geometry::srs::transformation</scope><name>transformation</name></member>
+      <member refid="classboost_1_1geometry_1_1srs_1_1transformation_1abd2c69b97afe21ad9318ae7ba0052f65" prot="public" virt="non-virtual"><scope>boost::geometry::srs::transformation</scope><name>transformation</name></member>
+      <member refid="classboost_1_1geometry_1_1srs_1_1transformation_1aae76b5c8750e810f1160b43ac80d9b39" prot="public" virt="non-virtual"><scope>boost::geometry::srs::transformation</scope><name>transformation</name></member>
+      <member refid="classboost_1_1geometry_1_1srs_1_1transformation_1a48fe82b9ad4421b2acfa906bb331ece9" prot="public" virt="non-virtual"><scope>boost::geometry::srs::transformation</scope><name>transformation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

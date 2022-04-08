@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1exception" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::exception</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::exception</basecompoundref>
+    <derivedcompoundref refid="classboost_1_1geometry_1_1centroid__exception" prot="public" virt="non-virtual">boost::geometry::centroid_exception</derivedcompoundref>
+    <derivedcompoundref refid="classboost_1_1geometry_1_1inconsistent__turns__exception" prot="public" virt="non-virtual">boost::geometry::inconsistent_turns_exception</derivedcompoundref>
+    <derivedcompoundref refid="classboost_1_1geometry_1_1invalid__input__exception" prot="public" virt="non-virtual">boost::geometry::invalid_input_exception</derivedcompoundref>
+    <derivedcompoundref refid="classboost_1_1geometry_1_1invalid__output__exception" prot="public" virt="non-virtual">boost::geometry::invalid_output_exception</derivedcompoundref>
+    <derivedcompoundref refid="classboost_1_1geometry_1_1overlay__invalid__input__exception" prot="public" virt="non-virtual">boost::geometry::overlay_invalid_input_exception</derivedcompoundref>
+    <derivedcompoundref refid="structboost_1_1geometry_1_1read__wkt__exception" prot="public" virt="non-virtual">boost::geometry::read_wkt_exception</derivedcompoundref>
+    <derivedcompoundref refid="classboost_1_1geometry_1_1turn__info__exception" prot="public" virt="non-virtual">boost::geometry::turn_info_exception</derivedcompoundref>
+    <includes local="no">exception.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1exception_1a20b8de7e5200fba44f60e45345377113" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>char const  *</type>
+        <definition>virtual char const* boost::geometry::exception::what</definition>
+        <argsstring>() const</argsstring>
+        <name>what</name>
+        <reimplementedby refid="classboost_1_1geometry_1_1inconsistent__turns__exception_1a28b729944bec80dbcf296eff520c645c">what</reimplementedby>
+        <reimplementedby refid="classboost_1_1geometry_1_1turn__info__exception_1a7709e4392e5ae72a1f47d6d3b24c1368">what</reimplementedby>
+        <reimplementedby refid="classboost_1_1geometry_1_1invalid__input__exception_1ad42e30a8f4714d804de2f4e9aafee5a0">what</reimplementedby>
+        <reimplementedby refid="classboost_1_1geometry_1_1overlay__invalid__input__exception_1a7dca6a0f0a3970c9bb51742922002a1c">what</reimplementedby>
+        <reimplementedby refid="classboost_1_1geometry_1_1empty__input__exception_1a077b590c02a627ba683b4cb08a37d4a4">what</reimplementedby>
+        <reimplementedby refid="classboost_1_1geometry_1_1invalid__output__exception_1af62848f377cc439d8634906a37f05fcc">what</reimplementedby>
+        <reimplementedby refid="classboost_1_1geometry_1_1centroid__exception_1ab9c5caeec6055c0b8dd5f8086771d49b">what</reimplementedby>
+        <reimplementedby refid="structboost_1_1geometry_1_1read__wkt__exception_1af055ea66fd86bc01af9eda2d38d0e985">what</reimplementedby>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/core/exception.hpp" line="36" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/core/exception.hpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base exception class for Boost.Geometry algorithms. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class is never thrown. All exceptions thrown in Boost.Geometry are derived from exception, so it might be convenient to catch it. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="526">
+        <label>boost::geometry::exception</label>
+        <link refid="classboost_1_1geometry_1_1exception"/>
+        <childnode refid="527" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="532">
+        <label>boost::geometry::invalid_output_exception</label>
+        <link refid="classboost_1_1geometry_1_1invalid__output__exception"/>
+        <childnode refid="526" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="528">
+        <label>boost::geometry::centroid_exception</label>
+        <link refid="classboost_1_1geometry_1_1centroid__exception"/>
+        <childnode refid="526" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="531">
+        <label>boost::geometry::empty_input_exception</label>
+        <link refid="classboost_1_1geometry_1_1empty__input__exception"/>
+        <childnode refid="530" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="529">
+        <label>boost::geometry::inconsistent_turns_exception</label>
+        <link refid="classboost_1_1geometry_1_1inconsistent__turns__exception"/>
+        <childnode refid="526" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="527">
+        <label>std::exception</label>
+      </node>
+      <node id="530">
+        <label>boost::geometry::invalid_input_exception</label>
+        <link refid="classboost_1_1geometry_1_1invalid__input__exception"/>
+        <childnode refid="526" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="533">
+        <label>boost::geometry::overlay_invalid_input_exception</label>
+        <link refid="classboost_1_1geometry_1_1overlay__invalid__input__exception"/>
+        <childnode refid="526" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="535">
+        <label>boost::geometry::turn_info_exception</label>
+        <link refid="classboost_1_1geometry_1_1turn__info__exception"/>
+        <childnode refid="526" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="534">
+        <label>boost::geometry::read_wkt_exception</label>
+        <link refid="structboost_1_1geometry_1_1read__wkt__exception"/>
+        <childnode refid="526" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="536">
+        <label>boost::geometry::exception</label>
+        <link refid="classboost_1_1geometry_1_1exception"/>
+        <childnode refid="537" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="537">
+        <label>std::exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/core/exception.hpp" line="34" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/core/exception.hpp" bodystart="33" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classboost_1_1geometry_1_1exception_1a20b8de7e5200fba44f60e45345377113" prot="public" virt="virtual"><scope>boost::geometry::exception</scope><name>what</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

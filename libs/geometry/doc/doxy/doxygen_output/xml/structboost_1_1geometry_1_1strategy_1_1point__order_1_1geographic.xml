@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic" kind="struct" language="C++" prot="public">
+    <compoundname>boost::geometry::strategy::point_order::geographic</compoundname>
+    <includes local="no">point_order.hpp</includes>
+    <innerclass refid="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1_1result__type" prot="public">boost::geometry::strategy::point_order::geographic::result_type</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename FormulaPolicy</type>
+        <defval><ref refid="structboost_1_1geometry_1_1strategy_1_1andoyer" kindref="compound">strategy::andoyer</ref></defval>
+      </param>
+      <param>
+        <type>typename Spheroid</type>
+        <defval><ref refid="classboost_1_1geometry_1_1srs_1_1spheroid" kindref="compound">srs::spheroid</ref>&lt;double&gt;</defval>
+      </param>
+      <param>
+        <type>typename CalculationType</type>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1a371b6684dfb9084b12dbf741f20b006a" prot="public" static="no">
+        <type><ref refid="structboost_1_1geometry_1_1strategy_1_1point__order_1_1azimuth__tag" kindref="compound">azimuth_tag</ref></type>
+        <definition>typedef azimuth_tag boost::geometry::strategy::point_order::geographic&lt; FormulaPolicy, Spheroid, CalculationType &gt;::version_tag</definition>
+        <argsstring></argsstring>
+        <name>version_tag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/point_order.hpp" line="40" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/point_order.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1a4d4d981a61095773b275856846656c70" prot="private" static="no" mutable="no">
+        <type>Spheroid</type>
+        <definition>Spheroid boost::geometry::strategy::point_order::geographic&lt; FormulaPolicy, Spheroid, CalculationType &gt;::m_spheroid</definition>
+        <argsstring></argsstring>
+        <name>m_spheroid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/point_order.hpp" line="102" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/point_order.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1aac6f109aebb5a1b7c23caad634e18eb8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Point</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool boost::geometry::strategy::point_order::geographic&lt; FormulaPolicy, Spheroid, CalculationType &gt;::apply</definition>
+        <argsstring>(Point const &amp;p1, Point const &amp;p2, typename result_type&lt; Point &gt;::type &amp;azi, typename result_type&lt; Point &gt;::type &amp;razi) const</argsstring>
+        <name>apply</name>
+        <param>
+          <type>Point const &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>Point const &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>typename <ref refid="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1_1result__type" kindref="compound">result_type</ref>&lt; Point &gt;::type &amp;</type>
+          <declname>azi</declname>
+        </param>
+        <param>
+          <type>typename <ref refid="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1_1result__type" kindref="compound">result_type</ref>&lt; Point &gt;::type &amp;</type>
+          <declname>razi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/point_order.hpp" line="59" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/point_order.hpp" bodystart="59" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1a68953ea878c1f990f6821556ec13cc87" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Point</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1_1result__type" kindref="compound">result_type</ref>&lt; Point &gt;::type</type>
+        <definition>result_type&lt;Point&gt;::type boost::geometry::strategy::point_order::geographic&lt; FormulaPolicy, Spheroid, CalculationType &gt;::apply</definition>
+        <argsstring>(Point const &amp;, Point const &amp;, Point const &amp;, typename result_type&lt; Point &gt;::type const &amp;azi1, typename result_type&lt; Point &gt;::type const &amp;azi2) const</argsstring>
+        <name>apply</name>
+        <param>
+          <type>Point const &amp;</type>
+        </param>
+        <param>
+          <type>Point const &amp;</type>
+        </param>
+        <param>
+          <type>Point const &amp;</type>
+        </param>
+        <param>
+          <type>typename <ref refid="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1_1result__type" kindref="compound">result_type</ref>&lt; Point &gt;::type const &amp;</type>
+          <declname>azi1</declname>
+        </param>
+        <param>
+          <type>typename <ref refid="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1_1result__type" kindref="compound">result_type</ref>&lt; Point &gt;::type const &amp;</type>
+          <declname>azi2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/point_order.hpp" line="87" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/point_order.hpp" bodystart="87" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1a8032f01d1f55f058da07e209dc121bfe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::strategy::point_order::geographic&lt; FormulaPolicy, Spheroid, CalculationType &gt;::geographic</definition>
+        <argsstring>()</argsstring>
+        <name>geographic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/point_order.hpp" line="51" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/point_order.hpp" bodystart="51" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1a6a609c9a14db151f26cfa9c9959ad70c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::strategy::point_order::geographic&lt; FormulaPolicy, Spheroid, CalculationType &gt;::geographic</definition>
+        <argsstring>(Spheroid const &amp;spheroid)</argsstring>
+        <name>geographic</name>
+        <param>
+          <type>Spheroid const &amp;</type>
+          <declname>spheroid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/point_order.hpp" line="54" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/point_order.hpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1aa3d99ef751eaa1b05656f0c482b1cc1d" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Point</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool boost::geometry::strategy::point_order::geographic&lt; FormulaPolicy, Spheroid, CalculationType &gt;::equals_point_point</definition>
+        <argsstring>(Point const &amp;p0, Point const &amp;p1)</argsstring>
+        <name>equals_point_point</name>
+        <param>
+          <type>Point const &amp;</type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type>Point const &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/point_order.hpp" line="97" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/point_order.hpp" bodystart="97" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/point_order.hpp" line="39" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/geographic/point_order.hpp" bodystart="38" bodyend="103"/>
+    <listofallmembers>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1aac6f109aebb5a1b7c23caad634e18eb8" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::point_order::geographic</scope><name>apply</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1a68953ea878c1f990f6821556ec13cc87" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::point_order::geographic</scope><name>apply</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1aa3d99ef751eaa1b05656f0c482b1cc1d" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::point_order::geographic</scope><name>equals_point_point</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1a8032f01d1f55f058da07e209dc121bfe" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::point_order::geographic</scope><name>geographic</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1a6a609c9a14db151f26cfa9c9959ad70c" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::point_order::geographic</scope><name>geographic</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1a4d4d981a61095773b275856846656c70" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::point_order::geographic</scope><name>m_spheroid</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1point__order_1_1geographic_1a371b6684dfb9084b12dbf741f20b006a" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::point_order::geographic</scope><name>version_tag</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

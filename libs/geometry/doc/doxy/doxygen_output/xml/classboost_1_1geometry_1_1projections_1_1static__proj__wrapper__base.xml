@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1projections_1_1static__proj__wrapper__base" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::projections::static_proj_wrapper_base</compoundname>
+    <includes local="no">projection.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>StaticParameters</declname>
+        <defname>StaticParameters</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>CT</declname>
+        <defname>CT</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classboost_1_1geometry_1_1projections_1_1static__proj__wrapper__base_1a76cdc264966a2e34d5aea98773b67282" prot="private" static="no">
+        <type>projections::detail::promote_to_double&lt; CT &gt;::type</type>
+        <definition>typedef projections::detail::promote_to_double&lt;CT&gt;::type boost::geometry::projections::static_proj_wrapper_base&lt; StaticParameters, CT &gt;::calc_t</definition>
+        <argsstring></argsstring>
+        <name>calc_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" line="387" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classboost_1_1geometry_1_1projections_1_1static__proj__wrapper__base_1a9809ef2ef10746f8bc358fea124dc579" prot="private" static="no">
+        <type>projections::parameters&lt; calc_t &gt;</type>
+        <definition>typedef projections::parameters&lt;calc_t&gt; boost::geometry::projections::static_proj_wrapper_base&lt; StaticParameters, CT &gt;::parameters_type</definition>
+        <argsstring></argsstring>
+        <name>parameters_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" line="389" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classboost_1_1geometry_1_1projections_1_1static__proj__wrapper__base_1a83976f432098bc37962a11b1be972b8f" prot="private" static="no">
+        <type>srs::spar::detail::pick_proj_tag&lt; StaticParameters &gt;::type</type>
+        <definition>typedef srs::spar::detail::pick_proj_tag&lt; StaticParameters &gt;::type boost::geometry::projections::static_proj_wrapper_base&lt; StaticParameters, CT &gt;::proj_tag</definition>
+        <argsstring></argsstring>
+        <name>proj_tag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" line="394" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classboost_1_1geometry_1_1projections_1_1static__proj__wrapper__base_1ad763a8aaab7c3f41222847c1d32cb394" prot="private" static="no">
+        <type>projections::detail::static_projection_type&lt; proj_tag, typename projections::detail::static_srs_tag&lt; StaticParameters &gt;::type, StaticParameters, calc_t, parameters_type &gt;::type</type>
+        <definition>typedef projections::detail::static_projection_type&lt; proj_tag, typename projections::detail::static_srs_tag&lt;StaticParameters&gt;::type, StaticParameters, calc_t, parameters_type &gt;::type boost::geometry::projections::static_proj_wrapper_base&lt; StaticParameters, CT &gt;::projection_type</definition>
+        <argsstring></argsstring>
+        <name>projection_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" line="403" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classboost_1_1geometry_1_1projections_1_1static__proj__wrapper__base_1a38196ed998bfb4b5585179228885d8b6" prot="private" static="no" mutable="no">
+        <type>projection_type</type>
+        <definition>projection_type boost::geometry::projections::static_proj_wrapper_base&lt; StaticParameters, CT &gt;::m_proj</definition>
+        <argsstring></argsstring>
+        <name>m_proj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" line="416" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1projections_1_1static__proj__wrapper__base_1a310a2cbd669c76185f34f992657bc9e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>projection_type &amp;</type>
+        <definition>projection_type&amp; boost::geometry::projections::static_proj_wrapper_base&lt; StaticParameters, CT &gt;::mutable_proj</definition>
+        <argsstring>()</argsstring>
+        <name>mutable_proj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" line="407" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" bodystart="407" bodyend="407"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1projections_1_1static__proj__wrapper__base_1a1584e5987f11933f1282e7b674271c19" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>projection_type const  &amp;</type>
+        <definition>projection_type const&amp; boost::geometry::projections::static_proj_wrapper_base&lt; StaticParameters, CT &gt;::proj</definition>
+        <argsstring>() const</argsstring>
+        <name>proj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" line="406" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" bodystart="406" bodyend="406"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1projections_1_1static__proj__wrapper__base_1a5c11c3bdef54bafb50e1ed9dec80e72e" prot="protected" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::projections::static_proj_wrapper_base&lt; StaticParameters, CT &gt;::static_proj_wrapper_base</definition>
+        <argsstring>(StaticParameters const &amp;s_params)</argsstring>
+        <name>static_proj_wrapper_base</name>
+        <param>
+          <type>StaticParameters const &amp;</type>
+          <declname>s_params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" line="410" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" bodystart="410" bodyend="413"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" line="386" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/srs/projection.hpp" bodystart="385" bodyend="417"/>
+    <listofallmembers>
+      <member refid="classboost_1_1geometry_1_1projections_1_1static__proj__wrapper__base_1a76cdc264966a2e34d5aea98773b67282" prot="private" virt="non-virtual"><scope>boost::geometry::projections::static_proj_wrapper_base</scope><name>calc_t</name></member>
+      <member refid="classboost_1_1geometry_1_1projections_1_1static__proj__wrapper__base_1a38196ed998bfb4b5585179228885d8b6" prot="private" virt="non-virtual"><scope>boost::geometry::projections::static_proj_wrapper_base</scope><name>m_proj</name></member>
+      <member refid="classboost_1_1geometry_1_1projections_1_1static__proj__wrapper__base_1a310a2cbd669c76185f34f992657bc9e1" prot="public" virt="non-virtual"><scope>boost::geometry::projections::static_proj_wrapper_base</scope><name>mutable_proj</name></member>
+      <member refid="classboost_1_1geometry_1_1projections_1_1static__proj__wrapper__base_1a9809ef2ef10746f8bc358fea124dc579" prot="private" virt="non-virtual"><scope>boost::geometry::projections::static_proj_wrapper_base</scope><name>parameters_type</name></member>
+      <member refid="classboost_1_1geometry_1_1projections_1_1static__proj__wrapper__base_1a1584e5987f11933f1282e7b674271c19" prot="public" virt="non-virtual"><scope>boost::geometry::projections::static_proj_wrapper_base</scope><name>proj</name></member>
+      <member refid="classboost_1_1geometry_1_1projections_1_1static__proj__wrapper__base_1a83976f432098bc37962a11b1be972b8f" prot="private" virt="non-virtual"><scope>boost::geometry::projections::static_proj_wrapper_base</scope><name>proj_tag</name></member>
+      <member refid="classboost_1_1geometry_1_1projections_1_1static__proj__wrapper__base_1ad763a8aaab7c3f41222847c1d32cb394" prot="private" virt="non-virtual"><scope>boost::geometry::projections::static_proj_wrapper_base</scope><name>projection_type</name></member>
+      <member refid="classboost_1_1geometry_1_1projections_1_1static__proj__wrapper__base_1a5c11c3bdef54bafb50e1ed9dec80e72e" prot="protected" virt="non-virtual"><scope>boost::geometry::projections::static_proj_wrapper_base</scope><name>static_proj_wrapper_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

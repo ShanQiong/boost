@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classboost_1_1geometry_1_1model_1_1box" kind="class" language="C++" prot="public">
+    <compoundname>boost::geometry::model::box</compoundname>
+    <includes local="no">box.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Point</declname>
+        <defname>Point</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classboost_1_1geometry_1_1model_1_1box_1a9d9e63fcc5754901fac4915ac48754fe" prot="private" static="no" mutable="no">
+        <type>Point</type>
+        <definition>Point boost::geometry::model::box&lt; Point &gt;::m_max_corner</definition>
+        <argsstring></argsstring>
+        <name>m_max_corner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" line="176" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classboost_1_1geometry_1_1model_1_1box_1a0b37bc39a36817db651ea6ae528674f2" prot="private" static="no" mutable="no">
+        <type>Point</type>
+        <definition>Point boost::geometry::model::box&lt; Point &gt;::m_min_corner</definition>
+        <argsstring></argsstring>
+        <name>m_min_corner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" line="175" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1model_1_1box_1a0df136ed354ce634835cb3118913a32b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>boost::geometry::model::box&lt; Point &gt;::BOOST_CONCEPT_ASSERT</definition>
+        <argsstring>((concepts::Point&lt; Point &gt;))</argsstring>
+        <name>BOOST_CONCEPT_ASSERT</name>
+        <param>
+          <type>(<ref refid="classboost_1_1geometry_1_1concepts_1_1_point" kindref="compound">concepts::Point</ref>&lt; Point &gt;)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" line="67" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classboost_1_1geometry_1_1model_1_1box_1a6776a1a1d8b846345573624fcbf57f11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr boost::geometry::model::box&lt; Point &gt;::box</definition>
+        <argsstring>()=default</argsstring>
+        <name>box</name>
+        <briefdescription>
+<para>Default constructor, no initialization. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1model_1_1box_1a00254a2f0f814339fd38dd715c1d1bfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P</type>
+            <defval>Point</defval>
+          </param>
+          <param>
+            <type>std::enable_if_t&lt; ! std::is_copy_constructible&lt; P &gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>boost::geometry::model::box&lt; Point &gt;::box</definition>
+        <argsstring>(Point const &amp;min_corner, Point const &amp;max_corner)</argsstring>
+        <name>box</name>
+        <param>
+          <type>Point const &amp;</type>
+          <declname>min_corner</declname>
+        </param>
+        <param>
+          <type>Point const &amp;</type>
+          <declname>max_corner</declname>
+        </param>
+        <briefdescription>
+<para>Constructor taking the minimum corner point and the maximum corner point. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" line="101" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" bodystart="101" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1model_1_1box_1a47cb184ddfb8615d3d09721f5d7c9fe2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P</type>
+            <defval>Point</defval>
+          </param>
+          <param>
+            <type>std::enable_if_t&lt; std::is_copy_constructible&lt; P &gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>constexpr</type>
+        <definition>constexpr boost::geometry::model::box&lt; Point &gt;::box</definition>
+        <argsstring>(Point const &amp;min_corner, Point const &amp;max_corner)</argsstring>
+        <name>box</name>
+        <param>
+          <type>Point const &amp;</type>
+          <declname>min_corner</declname>
+        </param>
+        <param>
+          <type>Point const &amp;</type>
+          <declname>max_corner</declname>
+        </param>
+        <briefdescription>
+<para>Constructor taking the minimum corner point and the maximum corner point. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" line="126" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" bodystart="126" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1model_1_1box_1aa9ecb4f45ca602c9b678d0e4ba20ff1e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr Point const  &amp;</type>
+        <definition>constexpr Point const&amp; boost::geometry::model::box&lt; Point &gt;::max_corner</definition>
+        <argsstring>() const</argsstring>
+        <name>max_corner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" line="149" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" bodystart="149" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1model_1_1box_1a62014bea25cbad5583136e6fc2665ad3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Point &amp;</type>
+        <definition>Point&amp; boost::geometry::model::box&lt; Point &gt;::max_corner</definition>
+        <argsstring>()</argsstring>
+        <name>max_corner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" line="165" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" bodystart="165" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1model_1_1box_1ab8efe837a0bdb0f0d9e09f625341c61f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr Point const  &amp;</type>
+        <definition>constexpr Point const&amp; boost::geometry::model::box&lt; Point &gt;::min_corner</definition>
+        <argsstring>() const</argsstring>
+        <name>min_corner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" line="138" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" bodystart="138" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1geometry_1_1model_1_1box_1aaaedfffca974e18df1a7337d8eeb9bc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Point &amp;</type>
+        <definition>Point&amp; boost::geometry::model::box&lt; Point &gt;::min_corner</definition>
+        <argsstring>()</argsstring>
+        <name>min_corner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" line="157" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" bodystart="157" bodyend="163"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class box: defines a box made of two describing points. </para>    </briefdescription>
+    <detaileddescription>
+<para>Box is always described by a <ref refid="classboost_1_1geometry_1_1model_1_1box_1aaaedfffca974e18df1a7337d8eeb9bc3" kindref="member">min_corner()</ref> and a <ref refid="classboost_1_1geometry_1_1model_1_1box_1a62014bea25cbad5583136e6fc2665ad3" kindref="member">max_corner()</ref> point. If another rectangle is used, use linear_ring or polygon. <simplesect kind="note"><para>Boxes are for selections and for calculating the envelope of geometries. Not all algorithms are implemented for box. Boxes are also used in Spatial Indexes. </para></simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point type. The box takes a point type as template parameter. The point type can be any point type. It can be 2D but can also be 3D or more dimensional. The box can also take a latlong point type as template parameter.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk>[include reference/geometries/box.qbk]</qbk>   <qbk.before.synopsis> [heading Model of]</qbk.before.synopsis>   <qbk.before.synopsis> [link geometry.reference.concepts.concept_box Box Concept]</qbk.before.synopsis>  </para>    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" line="66" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/geometries/box.hpp" bodystart="65" bodyend="181"/>
+    <listofallmembers>
+      <member refid="classboost_1_1geometry_1_1model_1_1box_1a0df136ed354ce634835cb3118913a32b" prot="private" virt="non-virtual"><scope>boost::geometry::model::box</scope><name>BOOST_CONCEPT_ASSERT</name></member>
+      <member refid="classboost_1_1geometry_1_1model_1_1box_1a6776a1a1d8b846345573624fcbf57f11" prot="public" virt="non-virtual"><scope>boost::geometry::model::box</scope><name>box</name></member>
+      <member refid="classboost_1_1geometry_1_1model_1_1box_1a00254a2f0f814339fd38dd715c1d1bfa" prot="public" virt="non-virtual"><scope>boost::geometry::model::box</scope><name>box</name></member>
+      <member refid="classboost_1_1geometry_1_1model_1_1box_1a47cb184ddfb8615d3d09721f5d7c9fe2" prot="public" virt="non-virtual"><scope>boost::geometry::model::box</scope><name>box</name></member>
+      <member refid="classboost_1_1geometry_1_1model_1_1box_1a9d9e63fcc5754901fac4915ac48754fe" prot="private" virt="non-virtual"><scope>boost::geometry::model::box</scope><name>m_max_corner</name></member>
+      <member refid="classboost_1_1geometry_1_1model_1_1box_1a0b37bc39a36817db651ea6ae528674f2" prot="private" virt="non-virtual"><scope>boost::geometry::model::box</scope><name>m_min_corner</name></member>
+      <member refid="classboost_1_1geometry_1_1model_1_1box_1aa9ecb4f45ca602c9b678d0e4ba20ff1e" prot="public" virt="non-virtual"><scope>boost::geometry::model::box</scope><name>max_corner</name></member>
+      <member refid="classboost_1_1geometry_1_1model_1_1box_1a62014bea25cbad5583136e6fc2665ad3" prot="public" virt="non-virtual"><scope>boost::geometry::model::box</scope><name>max_corner</name></member>
+      <member refid="classboost_1_1geometry_1_1model_1_1box_1ab8efe837a0bdb0f0d9e09f625341c61f" prot="public" virt="non-virtual"><scope>boost::geometry::model::box</scope><name>min_corner</name></member>
+      <member refid="classboost_1_1geometry_1_1model_1_1box_1aaaedfffca974e18df1a7337d8eeb9bc3" prot="public" virt="non-virtual"><scope>boost::geometry::model::box</scope><name>min_corner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

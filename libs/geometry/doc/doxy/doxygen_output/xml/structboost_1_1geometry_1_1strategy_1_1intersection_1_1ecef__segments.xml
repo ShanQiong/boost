@@ -1,0 +1,705 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments" kind="struct" language="C++" prot="public">
+    <compoundname>boost::geometry::strategy::intersection::ecef_segments</compoundname>
+    <includes local="no">intersection.hpp</includes>
+    <innerclass refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1_1segment__intersection__info" prot="public">boost::geometry::strategy::intersection::ecef_segments::segment_intersection_info</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>CalcPolicy</declname>
+        <defname>CalcPolicy</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>CalculationType</declname>
+        <defname>CalculationType</defname>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1aada476cb4aef24731cb1caa862ea2845" prot="public" static="no">
+        <type><ref refid="structboost_1_1geometry_1_1spherical__tag" kindref="compound">spherical_tag</ref></type>
+        <definition>typedef spherical_tag boost::geometry::strategy::intersection::ecef_segments&lt; CalcPolicy, CalculationType &gt;::cs_tag</definition>
+        <argsstring></argsstring>
+        <name>cs_tag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" line="97" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="enum" id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1adfd177691ed152aa797ef0febe6ac7d3" prot="public" static="no">
+        <name>intersection_point_flag</name>
+        <enumvalue id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1adfd177691ed152aa797ef0febe6ac7d3addd0e9936295d17b5a1e404dfecb04b3" prot="public">
+          <name>ipi_inters</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1adfd177691ed152aa797ef0febe6ac7d3a871d0c98ff813683961f9d86df07efb6" prot="public">
+          <name>ipi_at_a1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1adfd177691ed152aa797ef0febe6ac7d3ac1b4fe4531520d30c2c44bd61fef6cf6" prot="public">
+          <name>ipi_at_a2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1adfd177691ed152aa797ef0febe6ac7d3a3a53cc7f7550bd8243631426809df6d5" prot="public">
+          <name>ipi_at_b1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1adfd177691ed152aa797ef0febe6ac7d3a01afd94d6c09970d6e72a1025eece3c1" prot="public">
+          <name>ipi_at_b2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" line="99" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" bodystart="99" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1a27c30e7c7885990e9eb293a59a77fd85" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UniqueSubRange1</type>
+          </param>
+          <param>
+            <type>typename UniqueSubRange2</type>
+          </param>
+          <param>
+            <type>typename Policy</type>
+          </param>
+        </templateparamlist>
+        <type>Policy::return_type</type>
+        <definition>static Policy::return_type boost::geometry::strategy::intersection::ecef_segments&lt; CalcPolicy, CalculationType &gt;::apply</definition>
+        <argsstring>(UniqueSubRange1 const &amp;range_p, UniqueSubRange2 const &amp;range_q, Policy const &amp;)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>UniqueSubRange1 const &amp;</type>
+          <declname>range_p</declname>
+        </param>
+        <param>
+          <type>UniqueSubRange2 const &amp;</type>
+          <declname>range_q</declname>
+        </param>
+        <param>
+          <type>Policy const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" line="151" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" bodystart="151" bodyend="439"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1ae35e1e375a673cb6bd71868ef16d07c0" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename CalcT</type>
+          </param>
+        </templateparamlist>
+        <type>CalcT</type>
+        <definition>static CalcT boost::geometry::strategy::intersection::ecef_segments&lt; CalcPolicy, CalculationType &gt;::abs_distance</definition>
+        <argsstring>(CalcT const &amp;dist_a1_a2, CalcT const &amp;dist_a1_i1)</argsstring>
+        <name>abs_distance</name>
+        <param>
+          <type>CalcT const &amp;</type>
+          <declname>dist_a1_a2</declname>
+        </param>
+        <param>
+          <type>CalcT const &amp;</type>
+          <declname>dist_a1_i1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" line="720" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" bodystart="720" bodyend="728"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1a5177dab4920fa52e2f1dafe2c41dde3e" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Point1</type>
+          </param>
+          <param>
+            <type>typename Point2</type>
+          </param>
+          <param>
+            <type>typename Vec3d</type>
+          </param>
+          <param>
+            <type>typename Plane</type>
+          </param>
+          <param>
+            <type>typename CalcT</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool boost::geometry::strategy::intersection::ecef_segments&lt; CalcPolicy, CalculationType &gt;::calculate_collinear_data</definition>
+        <argsstring>(Point1 const &amp;a1, Point1 const &amp;a2, Point2 const &amp;b1, Point2 const &amp;, Vec3d const &amp;a1v, Vec3d const &amp;a2v, Plane const &amp;plane1, Vec3d const &amp;b1v, Vec3d const &amp;b2v, CalcT const &amp;dist_a1_a2, CalcT &amp;dist_a1_b1, bool degen_neq_coords=false)</argsstring>
+        <name>calculate_collinear_data</name>
+        <param>
+          <type>Point1 const &amp;</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>Point1 const &amp;</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>Point2 const &amp;</type>
+          <declname>b1</declname>
+        </param>
+        <param>
+          <type>Point2 const &amp;</type>
+        </param>
+        <param>
+          <type>Vec3d const &amp;</type>
+          <declname>a1v</declname>
+        </param>
+        <param>
+          <type>Vec3d const &amp;</type>
+          <declname>a2v</declname>
+        </param>
+        <param>
+          <type>Plane const &amp;</type>
+          <declname>plane1</declname>
+        </param>
+        <param>
+          <type>Vec3d const &amp;</type>
+          <declname>b1v</declname>
+        </param>
+        <param>
+          <type>Vec3d const &amp;</type>
+          <declname>b2v</declname>
+        </param>
+        <param>
+          <type>CalcT const &amp;</type>
+          <declname>dist_a1_a2</declname>
+        </param>
+        <param>
+          <type>CalcT &amp;</type>
+          <declname>dist_a1_b1</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>degen_neq_coords</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" line="460" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" bodystart="460" bodyend="509"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1aff79bbff5c26e33e0074c3374de15e0a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Vec3d</type>
+          </param>
+          <param>
+            <type>typename Plane</type>
+          </param>
+          <param>
+            <type>typename CalcT</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void boost::geometry::strategy::intersection::ecef_segments&lt; CalcPolicy, CalculationType &gt;::calculate_dist</definition>
+        <argsstring>(Vec3d const &amp;a1v, Vec3d const &amp;a2v, Plane const &amp;plane1, CalcT &amp;dist_a1_a2)</argsstring>
+        <name>calculate_dist</name>
+        <param>
+          <type>Vec3d const &amp;</type>
+          <declname>a1v</declname>
+        </param>
+        <param>
+          <type>Vec3d const &amp;</type>
+          <declname>a2v</declname>
+        </param>
+        <param>
+          <type>Plane const &amp;</type>
+          <declname>plane1</declname>
+        </param>
+        <param>
+          <type>CalcT &amp;</type>
+          <declname>dist_a1_a2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" line="658" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" bodystart="658" bodyend="666"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1ab2591b8185b8792fd336be327b1309e4" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Vec3d</type>
+          </param>
+          <param>
+            <type>typename Plane</type>
+          </param>
+          <param>
+            <type>typename CalcT</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void boost::geometry::strategy::intersection::ecef_segments&lt; CalcPolicy, CalculationType &gt;::calculate_dist</definition>
+        <argsstring>(Vec3d const &amp;a1v, Vec3d const &amp;, Plane const &amp;plane1, Vec3d const &amp;i1, CalcT &amp;dist_a1_i1)</argsstring>
+        <name>calculate_dist</name>
+        <param>
+          <type>Vec3d const &amp;</type>
+          <declname>a1v</declname>
+        </param>
+        <param>
+          <type>Vec3d const &amp;</type>
+        </param>
+        <param>
+          <type>Plane const &amp;</type>
+          <declname>plane1</declname>
+        </param>
+        <param>
+          <type>Vec3d const &amp;</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>CalcT &amp;</type>
+          <declname>dist_a1_i1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" line="669" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" bodystart="669" bodyend="690"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1ae91d2aae9fb74056d11ee041351778ca" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Point1</type>
+          </param>
+          <param>
+            <type>typename Point2</type>
+          </param>
+          <param>
+            <type>typename Vec3d</type>
+          </param>
+          <param>
+            <type>typename Plane</type>
+          </param>
+          <param>
+            <type>typename CalcT</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool boost::geometry::strategy::intersection::ecef_segments&lt; CalcPolicy, CalculationType &gt;::calculate_ip_data</definition>
+        <argsstring>(Point1 const &amp;a1, Point1 const &amp;a2, Point2 const &amp;b1, Point2 const &amp;b2, Vec3d const &amp;a1v, Vec3d const &amp;a2v, Vec3d const &amp;b1v, Vec3d const &amp;b2v, Plane const &amp;plane1, Plane const &amp;plane2, CalcPolicy const &amp;calc_policy, side_info const &amp;sides, CalcT const &amp;dist_a1_a2, CalcT const &amp;dist_b1_b2, Vec3d &amp;ip, CalcT &amp;dist_a1_ip, CalcT &amp;dist_b1_ip, intersection_point_flag &amp;ip_flag)</argsstring>
+        <name>calculate_ip_data</name>
+        <param>
+          <type>Point1 const &amp;</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>Point1 const &amp;</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>Point2 const &amp;</type>
+          <declname>b1</declname>
+        </param>
+        <param>
+          <type>Point2 const &amp;</type>
+          <declname>b2</declname>
+        </param>
+        <param>
+          <type>Vec3d const &amp;</type>
+          <declname>a1v</declname>
+        </param>
+        <param>
+          <type>Vec3d const &amp;</type>
+          <declname>a2v</declname>
+        </param>
+        <param>
+          <type>Vec3d const &amp;</type>
+          <declname>b1v</declname>
+        </param>
+        <param>
+          <type>Vec3d const &amp;</type>
+          <declname>b2v</declname>
+        </param>
+        <param>
+          <type>Plane const &amp;</type>
+          <declname>plane1</declname>
+        </param>
+        <param>
+          <type>Plane const &amp;</type>
+          <declname>plane2</declname>
+        </param>
+        <param>
+          <type>CalcPolicy const &amp;</type>
+          <declname>calc_policy</declname>
+        </param>
+        <param>
+          <type><ref refid="classboost_1_1geometry_1_1side__info" kindref="compound">side_info</ref> const &amp;</type>
+          <declname>sides</declname>
+        </param>
+        <param>
+          <type>CalcT const &amp;</type>
+          <declname>dist_a1_a2</declname>
+        </param>
+        <param>
+          <type>CalcT const &amp;</type>
+          <declname>dist_b1_b2</declname>
+        </param>
+        <param>
+          <type>Vec3d &amp;</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>CalcT &amp;</type>
+          <declname>dist_a1_ip</declname>
+        </param>
+        <param>
+          <type>CalcT &amp;</type>
+          <declname>dist_b1_ip</declname>
+        </param>
+        <param>
+          <type><ref refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1adfd177691ed152aa797ef0febe6ac7d3" kindref="member">intersection_point_flag</ref> &amp;</type>
+          <declname>ip_flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" line="512" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" bodystart="512" bodyend="655"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1a3e1e2267b43501e447a271c01eebc494" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Policy</type>
+          </param>
+          <param>
+            <type>typename CalcT</type>
+          </param>
+          <param>
+            <type>typename Segment</type>
+          </param>
+          <param>
+            <type>typename Point1</type>
+          </param>
+          <param>
+            <type>typename Point2</type>
+          </param>
+          <param>
+            <type>typename Vec3d</type>
+          </param>
+          <param>
+            <type>typename Plane</type>
+          </param>
+        </templateparamlist>
+        <type>Policy::return_type</type>
+        <definition>static Policy::return_type boost::geometry::strategy::intersection::ecef_segments&lt; CalcPolicy, CalculationType &gt;::collinear_one_degenerated</definition>
+        <argsstring>(Segment const &amp;segment, bool degenerated_a, Point1 const &amp;a1, Point1 const &amp;a2, Point2 const &amp;b1, Point2 const &amp;b2, Vec3d const &amp;a1v, Vec3d const &amp;a2v, Plane const &amp;plane, Vec3d const &amp;b1v, Vec3d const &amp;b2v, CalcT const &amp;dist_1_2, bool degen_neq_coords)</argsstring>
+        <name>collinear_one_degenerated</name>
+        <param>
+          <type>Segment const &amp;</type>
+          <declname>segment</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>degenerated_a</declname>
+        </param>
+        <param>
+          <type>Point1 const &amp;</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>Point1 const &amp;</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>Point2 const &amp;</type>
+          <declname>b1</declname>
+        </param>
+        <param>
+          <type>Point2 const &amp;</type>
+          <declname>b2</declname>
+        </param>
+        <param>
+          <type>Vec3d const &amp;</type>
+          <declname>a1v</declname>
+        </param>
+        <param>
+          <type>Vec3d const &amp;</type>
+          <declname>a2v</declname>
+        </param>
+        <param>
+          <type>Plane const &amp;</type>
+          <declname>plane</declname>
+        </param>
+        <param>
+          <type>Vec3d const &amp;</type>
+          <declname>b1v</declname>
+        </param>
+        <param>
+          <type>Vec3d const &amp;</type>
+          <declname>b2v</declname>
+        </param>
+        <param>
+          <type>CalcT const &amp;</type>
+          <declname>dist_1_2</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>degen_neq_coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" line="444" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" bodystart="444" bodyend="457"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1a71c57b11b8b07cd71da9b5d74cda82a6" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename CalcT</type>
+          </param>
+        </templateparamlist>
+        <type>CalcT</type>
+        <definition>static CalcT boost::geometry::strategy::intersection::ecef_segments&lt; CalcPolicy, CalculationType &gt;::dist_of_i2</definition>
+        <argsstring>(CalcT const &amp;dist_a1_i1)</argsstring>
+        <name>dist_of_i2</name>
+        <param>
+          <type>CalcT const &amp;</type>
+          <declname>dist_a1_i1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" line="706" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" bodystart="706" bodyend="717"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1aea49d2ac34dc5a70d662f9903ecb3a2f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Point1</type>
+          </param>
+          <param>
+            <type>typename Point2</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool boost::geometry::strategy::intersection::ecef_segments&lt; CalcPolicy, CalculationType &gt;::equals_point_point</definition>
+        <argsstring>(Point1 const &amp;point1, Point2 const &amp;point2)</argsstring>
+        <name>equals_point_point</name>
+        <param>
+          <type>Point1 const &amp;</type>
+          <declname>point1</declname>
+        </param>
+        <param>
+          <type>Point2 const &amp;</type>
+          <declname>point2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" line="774" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" bodystart="774" bodyend="777"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1a7c25e9f4691e7757b29ebd3651feeab8" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename CalcT</type>
+          </param>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool boost::geometry::strategy::intersection::ecef_segments&lt; CalcPolicy, CalculationType &gt;::is_endpoint_equal</definition>
+        <argsstring>(CalcT const &amp;dist, P1 const &amp;ai, P2 const &amp;b1)</argsstring>
+        <name>is_endpoint_equal</name>
+        <param>
+          <type>CalcT const &amp;</type>
+          <declname>dist</declname>
+        </param>
+        <param>
+          <type>P1 const &amp;</type>
+          <declname>ai</declname>
+        </param>
+        <param>
+          <type>P2 const &amp;</type>
+          <declname>b1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" line="741" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" bodystart="741" bodyend="746"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1a8b8daa93fd7979796fb38e912e50bd76" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename CalcT</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool boost::geometry::strategy::intersection::ecef_segments&lt; CalcPolicy, CalculationType &gt;::is_near</definition>
+        <argsstring>(CalcT const &amp;dist)</argsstring>
+        <name>is_near</name>
+        <param>
+          <type>CalcT const &amp;</type>
+          <declname>dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" line="749" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" bodystart="749" bodyend="753"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1ae37e000394c24285d5741b9148d1041e" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename CalcT</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool boost::geometry::strategy::intersection::ecef_segments&lt; CalcPolicy, CalculationType &gt;::is_potentially_crossing</definition>
+        <argsstring>(CalcT const &amp;dist_a1_a2, CalcT const &amp;dist_a1_i1, bool &amp;is_on_a, bool &amp;is_near_a1, bool &amp;is_near_a2)</argsstring>
+        <name>is_potentially_crossing</name>
+        <param>
+          <type>CalcT const &amp;</type>
+          <declname>dist_a1_a2</declname>
+        </param>
+        <param>
+          <type>CalcT const &amp;</type>
+          <declname>dist_a1_i1</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>is_on_a</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>is_near_a1</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>is_near_a2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" line="731" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" bodystart="731" bodyend="738"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1a41e79461579d4ebbb1a9e1dfa6491106" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ProjCoord1</type>
+          </param>
+          <param>
+            <type>typename ProjCoord2</type>
+          </param>
+        </templateparamlist>
+        <type>int</type>
+        <definition>static int boost::geometry::strategy::intersection::ecef_segments&lt; CalcPolicy, CalculationType &gt;::position_value</definition>
+        <argsstring>(ProjCoord1 const &amp;ca1, ProjCoord2 const &amp;cb1, ProjCoord2 const &amp;cb2)</argsstring>
+        <name>position_value</name>
+        <param>
+          <type>ProjCoord1 const &amp;</type>
+          <declname>ca1</declname>
+        </param>
+        <param>
+          <type>ProjCoord2 const &amp;</type>
+          <declname>cb1</declname>
+        </param>
+        <param>
+          <type>ProjCoord2 const &amp;</type>
+          <declname>cb2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" line="756" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" bodystart="756" bodyend="771"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" line="96" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/strategies/spherical/intersection.hpp" bodystart="95" bodyend="778"/>
+    <listofallmembers>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1ae35e1e375a673cb6bd71868ef16d07c0" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>abs_distance</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1a27c30e7c7885990e9eb293a59a77fd85" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>apply</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1a5177dab4920fa52e2f1dafe2c41dde3e" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>calculate_collinear_data</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1aff79bbff5c26e33e0074c3374de15e0a" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>calculate_dist</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1ab2591b8185b8792fd336be327b1309e4" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>calculate_dist</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1ae91d2aae9fb74056d11ee041351778ca" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>calculate_ip_data</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1a3e1e2267b43501e447a271c01eebc494" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>collinear_one_degenerated</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1aada476cb4aef24731cb1caa862ea2845" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>cs_tag</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1a71c57b11b8b07cd71da9b5d74cda82a6" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>dist_of_i2</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1aea49d2ac34dc5a70d662f9903ecb3a2f" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>equals_point_point</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1adfd177691ed152aa797ef0febe6ac7d3" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>intersection_point_flag</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1adfd177691ed152aa797ef0febe6ac7d3a871d0c98ff813683961f9d86df07efb6" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>ipi_at_a1</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1adfd177691ed152aa797ef0febe6ac7d3ac1b4fe4531520d30c2c44bd61fef6cf6" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>ipi_at_a2</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1adfd177691ed152aa797ef0febe6ac7d3a3a53cc7f7550bd8243631426809df6d5" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>ipi_at_b1</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1adfd177691ed152aa797ef0febe6ac7d3a01afd94d6c09970d6e72a1025eece3c1" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>ipi_at_b2</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1adfd177691ed152aa797ef0febe6ac7d3addd0e9936295d17b5a1e404dfecb04b3" prot="public" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>ipi_inters</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1a7c25e9f4691e7757b29ebd3651feeab8" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>is_endpoint_equal</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1a8b8daa93fd7979796fb38e912e50bd76" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>is_near</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1ae37e000394c24285d5741b9148d1041e" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>is_potentially_crossing</name></member>
+      <member refid="structboost_1_1geometry_1_1strategy_1_1intersection_1_1ecef__segments_1a41e79461579d4ebbb1a9e1dfa6491106" prot="private" virt="non-virtual"><scope>boost::geometry::strategy::intersection::ecef_segments</scope><name>position_value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

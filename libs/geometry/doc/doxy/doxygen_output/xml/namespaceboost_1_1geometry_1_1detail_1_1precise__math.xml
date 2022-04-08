@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespaceboost_1_1geometry_1_1detail_1_1precise__math" kind="namespace" language="C++">
+    <compoundname>boost::geometry::detail::precise_math</compoundname>
+    <innerclass refid="structboost_1_1geometry_1_1detail_1_1precise__math_1_1vec2d" prot="public">boost::geometry::detail::precise_math::vec2d</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceboost_1_1geometry_1_1detail_1_1precise__math_1afc49c704cbb6f92ff3c803af7337a9d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RealNumber</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>InSize1</declname>
+            <defname>InSize1</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>InSize2</declname>
+            <defname>InSize2</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>OutSize</declname>
+            <defname>OutSize</defname>
+          </param>
+        </templateparamlist>
+        <type>int</type>
+        <definition>int boost::geometry::detail::precise_math::fast_expansion_sum_zeroelim</definition>
+        <argsstring>(std::array&lt; RealNumber, InSize1 &gt; const &amp;e, std::array&lt; RealNumber, InSize2 &gt; const &amp;f, std::array&lt; RealNumber, OutSize &gt; &amp;h, int m=InSize1, int n=InSize2)</argsstring>
+        <name>fast_expansion_sum_zeroelim</name>
+        <param>
+          <type>std::array&lt; RealNumber, InSize1 &gt; const &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>std::array&lt; RealNumber, InSize2 &gt; const &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>std::array&lt; RealNumber, OutSize &gt; &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+          <defval>InSize1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+          <defval>InSize2</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" line="156" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" bodystart="156" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1geometry_1_1detail_1_1precise__math_1ac1a290c4896253013fce74da1b5227e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RealNumber</type>
+          </param>
+        </templateparamlist>
+        <type>std::array&lt; RealNumber, 2 &gt;</type>
+        <definition>std::array&lt;RealNumber, 2&gt; boost::geometry::detail::precise_math::fast_two_sum</definition>
+        <argsstring>(RealNumber const a, RealNumber const b)</argsstring>
+        <name>fast_two_sum</name>
+        <param>
+          <type>RealNumber const</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>RealNumber const</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" line="41" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" bodystart="41" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1geometry_1_1detail_1_1precise__math_1a925491e1f7e5412aa91e0cb519b7160d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RealNumber</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>Robustness</declname>
+            <defname>Robustness</defname>
+            <defval>2</defval>
+          </param>
+        </templateparamlist>
+        <type>RealNumber</type>
+        <definition>RealNumber boost::geometry::detail::precise_math::incircle</definition>
+        <argsstring>(std::array&lt; RealNumber, 2 &gt; const &amp;p1, std::array&lt; RealNumber, 2 &gt; const &amp;p2, std::array&lt; RealNumber, 2 &gt; const &amp;p3, std::array&lt; RealNumber, 2 &gt; const &amp;p4)</argsstring>
+        <name>incircle</name>
+        <param>
+          <type>std::array&lt; RealNumber, 2 &gt; const &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>std::array&lt; RealNumber, 2 &gt; const &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>std::array&lt; RealNumber, 2 &gt; const &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>std::array&lt; RealNumber, 2 &gt; const &amp;</type>
+          <declname>p4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" line="425" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" bodystart="425" bodyend="625"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1geometry_1_1detail_1_1precise__math_1a41dce21a1db4fb5f1e348e09af13f35a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RealNumber</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>Robustness</declname>
+            <defname>Robustness</defname>
+            <defval>3</defval>
+          </param>
+          <param>
+            <type>typename EpsPolicy</type>
+          </param>
+        </templateparamlist>
+        <type>RealNumber</type>
+        <definition>RealNumber boost::geometry::detail::precise_math::orient2d</definition>
+        <argsstring>(vec2d&lt; RealNumber &gt; const &amp;p1, vec2d&lt; RealNumber &gt; const &amp;p2, vec2d&lt; RealNumber &gt; const &amp;p3, EpsPolicy &amp;eps_policy)</argsstring>
+        <name>orient2d</name>
+        <param>
+          <type><ref refid="structboost_1_1geometry_1_1detail_1_1precise__math_1_1vec2d" kindref="compound">vec2d</ref>&lt; RealNumber &gt; const &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type><ref refid="structboost_1_1geometry_1_1detail_1_1precise__math_1_1vec2d" kindref="compound">vec2d</ref>&lt; RealNumber &gt; const &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type><ref refid="structboost_1_1geometry_1_1detail_1_1precise__math_1_1vec2d" kindref="compound">vec2d</ref>&lt; RealNumber &gt; const &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>EpsPolicy &amp;</type>
+          <declname>eps_policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" line="366" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" bodystart="366" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1geometry_1_1detail_1_1precise__math_1a1b7a202f6a3dede6040783e384f8746a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RealNumber</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>Robustness</declname>
+            <defname>Robustness</defname>
+          </param>
+        </templateparamlist>
+        <type>RealNumber</type>
+        <definition>RealNumber boost::geometry::detail::precise_math::orient2dtail</definition>
+        <argsstring>(vec2d&lt; RealNumber &gt; const &amp;p1, vec2d&lt; RealNumber &gt; const &amp;p2, vec2d&lt; RealNumber &gt; const &amp;p3, std::array&lt; RealNumber, 2 &gt; &amp;t1, std::array&lt; RealNumber, 2 &gt; &amp;t2, std::array&lt; RealNumber, 2 &gt; &amp;t3, std::array&lt; RealNumber, 2 &gt; &amp;t4, std::array&lt; RealNumber, 2 &gt; &amp;t5_01, std::array&lt; RealNumber, 2 &gt; &amp;t6_01, RealNumber const &amp;magnitude)</argsstring>
+        <name>orient2dtail</name>
+        <param>
+          <type><ref refid="structboost_1_1geometry_1_1detail_1_1precise__math_1_1vec2d" kindref="compound">vec2d</ref>&lt; RealNumber &gt; const &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type><ref refid="structboost_1_1geometry_1_1detail_1_1precise__math_1_1vec2d" kindref="compound">vec2d</ref>&lt; RealNumber &gt; const &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type><ref refid="structboost_1_1geometry_1_1detail_1_1precise__math_1_1vec2d" kindref="compound">vec2d</ref>&lt; RealNumber &gt; const &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>std::array&lt; RealNumber, 2 &gt; &amp;</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>std::array&lt; RealNumber, 2 &gt; &amp;</type>
+          <declname>t2</declname>
+        </param>
+        <param>
+          <type>std::array&lt; RealNumber, 2 &gt; &amp;</type>
+          <declname>t3</declname>
+        </param>
+        <param>
+          <type>std::array&lt; RealNumber, 2 &gt; &amp;</type>
+          <declname>t4</declname>
+        </param>
+        <param>
+          <type>std::array&lt; RealNumber, 2 &gt; &amp;</type>
+          <declname>t5_01</declname>
+        </param>
+        <param>
+          <type>std::array&lt; RealNumber, 2 &gt; &amp;</type>
+          <declname>t6_01</declname>
+        </param>
+        <param>
+          <type>RealNumber const &amp;</type>
+          <declname>magnitude</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" line="282" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" bodystart="282" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1geometry_1_1detail_1_1precise__math_1a0bf2b445c6a07d13c14abcf348dc68d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RealNumber</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>InSize</declname>
+            <defname>InSize</defname>
+          </param>
+        </templateparamlist>
+        <type>int</type>
+        <definition>int boost::geometry::detail::precise_math::scale_expansion_zeroelim</definition>
+        <argsstring>(std::array&lt; RealNumber, InSize &gt; const &amp;e, RealNumber const b, std::array&lt; RealNumber, 2 *InSize &gt; &amp;h, int e_non_zeros=InSize)</argsstring>
+        <name>scale_expansion_zeroelim</name>
+        <param>
+          <type>std::array&lt; RealNumber, InSize &gt; const &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>RealNumber const</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>std::array&lt; RealNumber, 2 *InSize &gt; &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>e_non_zeros</declname>
+          <defval>InSize</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" line="237" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" bodystart="237" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1geometry_1_1detail_1_1precise__math_1a2e88b658f012de9cc58c9ab5a143f227" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RealNumber</type>
+          </param>
+        </templateparamlist>
+        <type>std::array&lt; RealNumber, 2 &gt;</type>
+        <definition>std::array&lt;RealNumber, 2&gt; boost::geometry::detail::precise_math::two_diff</definition>
+        <argsstring>(RealNumber const a, RealNumber const b)</argsstring>
+        <name>two_diff</name>
+        <param>
+          <type>RealNumber const</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>RealNumber const</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" line="87" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" bodystart="87" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1geometry_1_1detail_1_1precise__math_1a2303f6217228e2f1d50c4b2f4e10bf2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RealNumber</type>
+          </param>
+        </templateparamlist>
+        <type>RealNumber</type>
+        <definition>RealNumber boost::geometry::detail::precise_math::two_diff_tail</definition>
+        <argsstring>(RealNumber const a, RealNumber const b, RealNumber const x)</argsstring>
+        <name>two_diff_tail</name>
+        <param>
+          <type>RealNumber const</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>RealNumber const</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>RealNumber const</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" line="71" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" bodystart="71" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1geometry_1_1detail_1_1precise__math_1a197e9398a9600dbbb63f10b4cf0000a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RealNumber</type>
+          </param>
+        </templateparamlist>
+        <type>std::array&lt; RealNumber, 2 &gt;</type>
+        <definition>std::array&lt;RealNumber, 2&gt; boost::geometry::detail::precise_math::two_product</definition>
+        <argsstring>(RealNumber const a, RealNumber const b)</argsstring>
+        <name>two_product</name>
+        <param>
+          <type>RealNumber const</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>RealNumber const</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" line="112" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" bodystart="112" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1geometry_1_1detail_1_1precise__math_1af0025e805e39c068c6eb9dec927433c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RealNumber</type>
+          </param>
+        </templateparamlist>
+        <type>RealNumber</type>
+        <definition>RealNumber boost::geometry::detail::precise_math::two_product_tail</definition>
+        <argsstring>(RealNumber const a, RealNumber const b, RealNumber const x)</argsstring>
+        <name>two_product_tail</name>
+        <param>
+          <type>RealNumber const</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>RealNumber const</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>RealNumber const</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" line="100" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" bodystart="100" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1geometry_1_1detail_1_1precise__math_1a88808e668d73f741bb932ca4c51508a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RealNumber</type>
+          </param>
+        </templateparamlist>
+        <type>std::array&lt; RealNumber, 2 &gt;</type>
+        <definition>std::array&lt;RealNumber, 2&gt; boost::geometry::detail::precise_math::two_sum</definition>
+        <argsstring>(RealNumber const a, RealNumber const b)</argsstring>
+        <name>two_sum</name>
+        <param>
+          <type>RealNumber const</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>RealNumber const</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" line="54" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" bodystart="54" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1geometry_1_1detail_1_1precise__math_1a5b51ca849df909accaaf0a2d745f4dac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RealNumber</type>
+          </param>
+        </templateparamlist>
+        <type>std::array&lt; RealNumber, 4 &gt;</type>
+        <definition>std::array&lt;RealNumber, 4&gt; boost::geometry::detail::precise_math::two_two_expansion_diff</definition>
+        <argsstring>(std::array&lt; RealNumber, 2 &gt; const a, std::array&lt; RealNumber, 2 &gt; const b)</argsstring>
+        <name>two_two_expansion_diff</name>
+        <param>
+          <type>std::array&lt; RealNumber, 2 &gt; const</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>std::array&lt; RealNumber, 2 &gt; const</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" line="128" column="1" bodyfile="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" bodystart="128" bodyend="143"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hsb/CProj/Learning/boost/boost_1_79_0/boost/geometry/util/precise_math.hpp" line="34" column="1"/>
+  </compounddef>
+</doxygen>
